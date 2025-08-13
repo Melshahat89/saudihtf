@@ -19,28 +19,28 @@
                             <li class="nav-item active">
                                 <a class="nav-link" href="/">{{trans('home.home')}} <span class="sr-only">(current)</span></a>
                             </li>
-                            <li><a class="nav-link dropdown-toggle"> تخصصات العمل الحر</a>
-                                <ul class="sub-menu">
-                                    @foreach(menuFutureWorkCategories() as $catF)
-                                        @if(!$catF->childs->isEmpty())
-                                            <li><a>  {{$catF->name_lang}}  <i class="fas fa-angle-down"></i> </a>
-                                                <ul class="sub-menu">
-                                                    @foreach($catF->childs as $childF)
-                                                        @if($childF->show_menu)
-                                                            <li><a href="/allcourses/category/{{$childF->slug}}">{{$childF->name_lang}}</a></li>
-                                                        @endif
-                                                    @endforeach
-                                                </ul>
-                                            </li>
-                                        @else
-                                            @if(!$catF->parent_id)
-                                                <li><a class="dropdown-item" href="/allcourses/category/{{$catF->slug}}">{{$catF->name_lang}}</a></li>
-                                            @endif
+{{--                            <li><a class="nav-link dropdown-toggle"> تخصصات العمل الحر</a>--}}
+{{--                                <ul class="sub-menu">--}}
+{{--                                    @foreach(menuFutureWorkCategories() as $catF)--}}
+{{--                                        @if(!$catF->childs->isEmpty())--}}
+{{--                                            <li><a>  {{$catF->name_lang}}  <i class="fas fa-angle-down"></i> </a>--}}
+{{--                                                <ul class="sub-menu">--}}
+{{--                                                    @foreach($catF->childs as $childF)--}}
+{{--                                                        @if($childF->show_menu)--}}
+{{--                                                            <li><a href="/allcourses/category/{{$childF->slug}}">{{$childF->name_lang}}</a></li>--}}
+{{--                                                        @endif--}}
+{{--                                                    @endforeach--}}
+{{--                                                </ul>--}}
+{{--                                            </li>--}}
+{{--                                        @else--}}
+{{--                                            @if(!$catF->parent_id)--}}
+{{--                                                <li><a class="dropdown-item" href="/allcourses/category/{{$catF->slug}}">{{$catF->name_lang}}</a></li>--}}
+{{--                                            @endif--}}
 
-                                        @endif
-                                    @endforeach
-                                </ul>
-                            </li>
+{{--                                        @endif--}}
+{{--                                    @endforeach--}}
+{{--                                </ul>--}}
+{{--                            </li>--}}
                             <li><a class="nav-link dropdown-toggle">                                    تخصصات عامة
                                 </a>
                                 <ul class="sub-menu">
@@ -95,7 +95,7 @@
             </div>
             @if(Auth::check())
                 <div class="pt-2 {{ isMobile() ? 'w-100 d-flex justify-content-between' : ''}}">
-{{--                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #244092;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>--}}
+{{--                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>--}}
 {{--                    <a href="/cart"><div class="head_cart d-inline-block align-self-center"><span class="floated_count">{{ count(getShoppingCart()) }}</span><a href="/cart" class="head_cart_icon"></a></div></a>--}}
                     <div class="d-inline-block desktop-account-info-padding">
                         <a class="nav-link dropdown-toggle" href="#" id="userMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

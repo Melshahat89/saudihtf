@@ -35,7 +35,7 @@ class OrderConfirm extends Mailable
 
         //webmaster@meduo.net
         
-        return $this->from('webmaster@meduo.net', 'Future Work Order')->view('website.courses.OrderConfirm')->with([
+        return $this->from('webmaster@meduo.net', 'Health Tourism Future Order')->view('website.courses.OrderConfirm')->with([
             'order' => $this->order,
             'user' => $this->user,
             'amount' => $this->amount,

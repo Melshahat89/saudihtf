@@ -331,13 +331,13 @@ header a.logo img {max-width:130px; vertical-align: sub;}
 }
 
 .header-appear .nav-box-round .navbar-nav .nav-link.active{
-    background-color: #244092;
+    background-color: #326478;
     color: #ffffff !important;
 }
 
 
 .text-blue {
-    color: #244092 !important;
+    color: #326478 !important;
 }
 
 .header-appear .nav-box-round .navbar-nav .nav-link:hover{
@@ -395,7 +395,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
     position: fixed;
     right: 0;
     top: 0;
-    background: linear-gradient(90deg, #244092 0%, #18b289 90%);
+    background: linear-gradient(90deg, #326478 0%, #18b289 90%);
     z-index: 1032;
     height: 100%;
     -webkit-transform: translate3d(100%, 0, 0);
@@ -734,7 +734,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
 }
 
 .footer-social li a:hover{
-    background-color:#244092;
+    background-color:#326478;
     color: #ffffff;
 }
 
@@ -757,7 +757,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
     text-decoration: none;
     z-index: 99;
     border-radius: 100%;
-    background-color:#244092;
+    background-color:#326478;
 }
 .scroll-top-arrow:hover{
     background-position: right center;
@@ -814,7 +814,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
     -ms-animation: cssload-rotate-one 1.15s linear infinite;
     -webkit-animation: cssload-rotate-one 1.15s linear infinite;
     -moz-animation: cssload-rotate-one 1.15s linear infinite;
-    border-bottom: 5px solid #244092;
+    border-bottom: 5px solid #326478;
 }
 
 .cssload-inner.cssload-two {
@@ -825,7 +825,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
     -ms-animation: cssload-rotate-two 1.15s linear infinite;
     -webkit-animation: cssload-rotate-two 1.15s linear infinite;
     -moz-animation: cssload-rotate-two 1.15s linear infinite;
-    border-right: 5px solid #244092;
+    border-right: 5px solid #326478;
 }
 
 .cssload-inner.cssload-three {
@@ -836,7 +836,7 @@ header a.logo img {max-width:130px; vertical-align: sub;}
     -ms-animation: cssload-rotate-three 1.15s linear infinite;
     -webkit-animation: cssload-rotate-three 1.15s linear infinite;
     -moz-animation: cssload-rotate-three 1.15s linear infinite;
-    border-top: 5px solid #244092;
+    border-top: 5px solid #326478;
 }
 
 @keyframes cssload-rotate-one {

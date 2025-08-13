@@ -6082,7 +6082,7 @@ readers do not read off random characters that represent icons */
 }
 
 .avatar_border {
-  border: 2px solid #244092;
+  border: 2px solid #326478;
 }
 
 .bg_lightgray {
@@ -6094,7 +6094,7 @@ readers do not read off random characters that represent icons */
 }
 
 .bg_primary {
-  background-color: #244092;
+  background-color: #326478;
 }
 
 .bg_yellowch {
@@ -6114,8 +6114,8 @@ readers do not read off random characters that represent icons */
 }
 
 .bg_gradient {
-  background: #244092;
-  background: linear-gradient(-90deg, #244092 0%, #11607f 50%, #ffcb04 100%);
+  background: #326478;
+  background: linear-gradient(-90deg, #326478 0%, #11607f 50%, #ffcb04 100%);
 }
 
 .section_image_overlay {
@@ -6155,7 +6155,7 @@ readers do not read off random characters that represent icons */
 }
 
 .text_primary {
-  color: #244092 !important;
+  color: #326478 !important;
 }
 
 .text_white {
@@ -6381,7 +6381,7 @@ sup {
 }
 
 a {
-  color: #244092;
+  color: #326478;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -6911,7 +6911,7 @@ pre code {
   color: #2B2B2B;
 }
 .header .header_top .nav li ul li a:hover {
-  color: #244092;
+  color: #326478;
 }
 .header .header_bottom {
   padding: 10px 0;
@@ -7245,10 +7245,10 @@ pre code {
 }
 .header .header_nav_links li .sub_nav > div .sub_nav_link:hover {
   background-color: #e5e5e5;
-  color: #244092;
+  color: #326478;
 }
 .header .header_nav_links li .sub_nav > div .sub_nav_link:hover i {
-  color: #244092;
+  color: #326478;
 }
 .header .header_nav_links li .sub_nav > div .sub_nav_link i {
   color: #a0a0a0;
@@ -7480,7 +7480,7 @@ fieldset:disabled a.button {
 
 .button_primary {
   color: #fff;
-  background-color: #244092;
+  background-color: #326478;
   border-color: transparent;
 }
 
@@ -7505,16 +7505,16 @@ fieldset:disabled a.button {
 }
 
 .button_primary_reverse {
-  color: #244092;
+  color: #326478;
   background-color: transparent;
-  border-color: #244092;
+  border-color: #326478;
 }
 
 .button_primary_reverse:hover,
 .button_primary_reverse:focus, .button_primary_reverse.focus {
   color: #fff;
-  background-color: #244092;
-  border-color: #244092;
+  background-color: #326478;
+  border-color: #326478;
 }
 
 .button_primary_reverse.disabled, .button_primary_reverse:disabled {
@@ -7526,8 +7526,8 @@ fieldset:disabled a.button {
 .button_primary_reverse:not(:disabled):not(.disabled):active, .button_primary_reverse:not(:disabled):not(.disabled).active,
 .show > .button_primary_reverse.dropdown-toggle {
   color: #fff;
-  background-color: #244092;
-  border-color: #244092;
+  background-color: #326478;
+  border-color: #326478;
 }
 
 .button_black {
@@ -7583,7 +7583,7 @@ fieldset:disabled a.button {
 }
 
 .button_link {
-  color: #244092;
+  color: #326478;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -7806,7 +7806,7 @@ fieldset:disabled a.button {
 }
 .course_card .course_card_detail .course_card_price {
   font-size: 75%;
-  color: #244092;
+  color: #326478;
   font-weight: 500;
 }
 
@@ -8084,7 +8084,7 @@ fieldset:disabled a.button {
   flex-wrap: wrap;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  background-color: #244092;
+  background-color: #326478;
   color: white;
   padding: 14px;
 }
@@ -8201,7 +8201,7 @@ fieldset:disabled a.button {
   font-size: 2.5em;
   letter-spacing: -1px;
   margin-bottom: 5px;
-  color: #244092;
+  color: #326478;
   font-weight: normal;
 }
 .course_column_info .course_price span {
@@ -9695,8 +9695,8 @@ textarea.form_input {
   border-radius: 4px;
   transform: scale(1);
   vertical-align: middle;
-  border: 1px solid #244092;
-  background-color: #244092;
+  border: 1px solid #326478;
+  background-color: #326478;
   transition: all 0.2s ease;
   margin-right: 5px;
   vertical-align: middle;
@@ -9722,7 +9722,7 @@ textarea.form_input {
   content: "";
   width: 100%;
   height: 100%;
-  background: #244092;
+  background: #326478;
   display: block;
   transform: scale(0);
   opacity: 1;
@@ -9734,12 +9734,12 @@ textarea.form_input {
 }
 
 .cbx:hover span:first-child {
-  border-color: #244092;
+  border-color: #326478;
 }
 
 .inp-cbx:checked + .cbx span:first-child {
-  background: #244092;
-  border-color: #244092;
+  background: #326478;
+  border-color: #326478;
   animation: wave 0.4s ease;
 }
 
@@ -9789,11 +9789,11 @@ textarea.form_input {
   left: 0;
   top: 50%;
   background: transparent;
-  border: 2px solid #244092;
+  border: 2px solid #326478;
   margin-top: -6px;
 }
 .radio label:after {
-  background: #244092;
+  background: #326478;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -9839,7 +9839,7 @@ textarea.form_input {
 }
 .switch input[type="checkbox"]:checked + .slider,
 .switch input[type="checkbox"]:focus + .slider {
-  background-color: #244092;
+  background-color: #326478;
 }
 .switch input[type="checkbox"]:checked + .slider:after {
   -moz-transform: translateX(26px);
@@ -12242,7 +12242,7 @@ video::-webkit-media-text-track-display {
   color: #2B2B2B;
 }
 .account .account_aside ul li.active a {
-  color: #244092;
+  color: #326478;
   background-color: #e3e3e3;
 }
 .account .account_content {
@@ -12546,7 +12546,7 @@ video::-webkit-media-text-track-display {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 16px;
-  color: #244092;
+  color: #326478;
 }
 .contact .contact_map {
   width: 100%;
@@ -12663,8 +12663,8 @@ video::-webkit-media-text-track-display {
 
 .alert-info {
   color: white;
-  background-color: #244092;
-  border-color: #244092;
+  background-color: #326478;
+  border-color: #326478;
 }
 
 .alert-info hr {
@@ -13238,8 +13238,8 @@ video::-webkit-media-text-track-display {
   background-color: #e3e3e3;
 }
 .pagination li.active a {
-  background-color: #244092;
-  border-color: #244092;
+  background-color: #326478;
+  border-color: #326478;
   color: white;
   cursor: default;
 }
@@ -13506,7 +13506,7 @@ video::-webkit-media-text-track-display {
   text-decoration: none;
   font-weight: 500;
   position: relative;
-  background-color: #244092;
+  background-color: #326478;
   font-size: 20px;
 }
 .talks .item a.hover_active:hover .talks_statics {
@@ -13840,7 +13840,7 @@ video::-webkit-media-text-track-display {
   padding: 12px 18px;
   padding-left: 30px;
   display: block;
-  color: #244092;
+  color: #326478;
   cursor: pointer;
   background-color: #FCFCFC;
   -moz-transition: background-color 0.3s linear;
@@ -13926,7 +13926,7 @@ video::-webkit-media-text-track-display {
   border: 0;
 }
 .jobs_list .card .card_header > button {
-  background-color: #244092 !important;
+  background-color: #326478 !important;
   color: white;
   border: 1px solid #D8D8D8;
 }
@@ -13935,7 +13935,7 @@ video::-webkit-media-text-track-display {
 }
 .jobs_list .card .card_header > button.collapsed {
   background-color: #f0f0f0 !important;
-  color: #244092;
+  color: #326478;
 }
 .jobs_list .card .card_header > button.collapsed:before {
   color: #2B2B2B;
@@ -14025,8 +14025,8 @@ video::-webkit-media-text-track-display {
   border-bottom: 3px solid transparent;
 }
 .about_nav_tabs li a.active {
-  color: #244092;
-  border-color: #244092;
+  color: #326478;
+  border-color: #326478;
 }
 
 .section_about {
@@ -14382,7 +14382,7 @@ figure.img img {
   flex-wrap: wrap;
 }
 .bunches .bunch_item .item_content .item_content_footer .item_content_price {
-  color: #244092;
+  color: #326478;
   font-weight: 500;
 }
 .bunches .bunch_item .item_content .item_common_courses {
@@ -14743,7 +14743,7 @@ button.close {
   margin-bottom: 40px;
 }
 .quiz .quiz_progress .quiz_progressbar .quiz_progressbar_inner {
-  background-color: #244092;
+  background-color: #326478;
   -moz-transition: width 0.3s;
   -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
@@ -14794,7 +14794,7 @@ button.close {
   padding: 24px 42px 24px 66px;
   background-color: rgba(204, 229, 255, 0.8);
   border: 1px solid rgba(204, 229, 255, 0.9);
-  color: #244092;
+  color: #326478;
   margin-top: 42px;
   position: relative;
 }

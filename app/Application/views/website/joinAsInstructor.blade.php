@@ -46,7 +46,7 @@
     <div class="row d-flex justify-content-center">
         <div class="col-md-12">
             <div class="pt-4 pb-4">
-                <h2 class="text-center" style="color: #244092">{{ trans('website.Why Choose IGTS') }}</h2>
+                <h2 class="text-center" style="color: #326478">{{ trans('website.Why Choose IGTS') }}</h2>
             </div>
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BrAXHkfqqxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,7 +59,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="pt-4 pb-4">
-                <h2 class="text-center" style="color: #244092">{{ trans('website.The benefits of E-Learning on IGTS') }}</h2>
+                <h2 class="text-center" style="color: #326478">{{ trans('website.The benefits of E-Learning on IGTS') }}</h2>
             </div>
         </div>
         <div class="col-md-6">
@@ -163,7 +163,7 @@
     <div class="">
         <div class="col-md-12">
             <div class="pt-4 pb-4">
-                <h2 class="text-center" style="color: #244092">{{ trans('website.Apply Now To Become an Instructor') }}</h2>
+                <h2 class="text-center" style="color: #326478">{{ trans('website.Apply Now To Become an Instructor') }}</h2>
             </div>
         </div>
     </div>

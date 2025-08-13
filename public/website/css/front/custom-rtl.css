@@ -104,7 +104,7 @@ body{
   }
   
   .tag {
-    background: #244092;
+    background: #326478;
     border-radius: 3px 0 0 3px;
     color: #fff;
     display: inline-block;
@@ -132,7 +132,7 @@ body{
   .tag::before {
     background: #f7f7f7;
     border-bottom: 13px solid transparent;
-    border-left: 10px solid #244092;
+    border-left: 10px solid #326478;
     border-top: 13px solid transparent;
     content: '';
     position: absolute;
@@ -210,13 +210,13 @@ body{
   }
   .bread-crumb{
       padding: 10px 0;
-      color: #244092;
+      color: #326478;
       border-bottom: 1px solid #ddd;
       border-top: 1px solid #ddd;
   
   }
   .bread-crumb a{
-    color: #244092;
+    color: #326478;
     font-weight: 700;
   }
   .bread-crumb a:hover{
@@ -623,10 +623,10 @@ body{
     padding: 40px 0;
   }
   .contact-social a{
-    background: #8ebe25;
+    background: #00afab;
   }
   .form-container h3{
-    background: #8ebe25;
+    background: #00afab;
     border-radius: 10px 10px 0 0;
     padding: 20px;
     color: #fff;
@@ -730,7 +730,7 @@ body{
     object-fit: cover;
   }
   .about-instructor h1{
-    color: #244092;
+    color: #326478;
     font-weight: 700;
   }
   .careers-content{
@@ -1113,9 +1113,9 @@ body{
     font-size: 10px; margin-left: 15px;
   }
   .custom-rev h1{
-    border-bottom: 1px solid #244092;
+    border-bottom: 1px solid #326478;
     padding: 0 20px 30px 20px;
-    color: #244092;
+    color: #326478;
     margin-bottom: 22px;
   }
   .custom-rev p{
@@ -1154,7 +1154,7 @@ body{
   }
   .comment-action a{
     font-size: 14px;
-    color: #244092;
+    color: #326478;
   }
   .comment-action a:hover{
     color: #000;
@@ -1165,7 +1165,7 @@ body{
   }
   .form-replay{
     border-radius: 20px !important;
-    border: 1px solid #244092;
+    border: 1px solid #326478;
     background-size: 25px !important;
     padding-left: 20px;
     min-height: 100px !important;
@@ -1175,7 +1175,7 @@ body{
     color: #ddd;
   }
   .back-bg-buy{
-    background: #244092;
+    background: #326478;
     color: #fff;
     padding: 15px;
     width: 20%;
@@ -1184,7 +1184,7 @@ body{
   .course-line a.disabled{color: #ddd;}
   .back-bg-buy:hover{
     background: #fff;
-    color: #244092;
+    color: #326478;
   }
   .green-btn{
     background-color: green;
@@ -1649,7 +1649,7 @@ body{
   }
   
   .modal-lec-title{
-    background: #244092;
+    background: #326478;
       text-align: center;
       /* height: 31px; */
       width: 100%;
@@ -1681,7 +1681,7 @@ body{
         border-radius: 60px;
     }   
   .nav-pills .nav-link{
-    color: #244092;
+    color: #326478;
         background-color: #fff;
         border-radius: 60px;
   }  
@@ -2201,7 +2201,7 @@ body{
     object-fit: cover;
   }
   .about-instructor h1{
-    color: #244092;
+    color: #326478;
     font-weight: 700;
   }
   .careers-content{
@@ -2584,9 +2584,9 @@ body{
     font-size: 10px; margin-right: 15px;
   }
   .custom-rev h1{
-    border-bottom: 1px solid #244092;
+    border-bottom: 1px solid #326478;
     padding: 0 20px 30px 20px;
-    color: #244092;
+    color: #326478;
     margin-bottom: 22px;
   }
   .custom-rev p{
@@ -2625,7 +2625,7 @@ body{
   }
   .comment-action a{
     font-size: 14px;
-    color: #244092;
+    color: #326478;
   }
   .comment-action a:hover{
     color: #000;
@@ -2636,7 +2636,7 @@ body{
   }
   .form-replay{
     border-radius: 20px !important;
-    border: 1px solid #244092;
+    border: 1px solid #326478;
     background-size: 25px !important;
     padding-right: 20px;
     min-height: 100px !important;
@@ -2646,7 +2646,7 @@ body{
     color: #ddd;
   }
   .back-bg-buy{
-    background: #244092;
+    background: #326478;
     color: #fff;
     padding: 15px;
     width: 20%;
@@ -2655,7 +2655,7 @@ body{
   .course-line a.disabled{color: #ddd;}
   .back-bg-buy:hover{
     background: #fff;
-    color: #244092;
+    color: #326478;
   }
   .green-btn{
     background-color: green;
@@ -2938,9 +2938,9 @@ body{
     margin: 0 5px;
   }
   .cntrl-btn.active{
-    background: #244092;
+    background: #326478;
     color: #fff !important;
-    border: 1px solid #244092;
+    border: 1px solid #326478;
   }
   .partnership_form{
     width: 50%;
@@ -3112,12 +3112,12 @@ body{
     padding: 0px 20px 0px 20px;
     border-radius: 50px;
     display: inline-block;
-    border: 1px solid #244092;
+    border: 1px solid #326478;
   }
   .add-to-cart:hover{
-    color: #244092 !important;
+    color: #326478 !important;
     background: #fff;
-    border: 1px solid #244092;
+    border: 1px solid #326478;
   }
   
   label{
@@ -4021,7 +4021,7 @@ color:#FFF;
   display: block;
   margin: 0 auto;}
 .loader {
-  color: #244092;
+  color: #326478;
   font-size: 90px;
   text-indent: -9999em;
   overflow: hidden;
@@ -4178,7 +4178,7 @@ border-radius: 50px;
   position: absolute;
   right: 22px;
   top: 22px;
-  background-color: #244092 !important;
+  background-color: #326478 !important;
   font-size: 18px;
 
 }
@@ -4469,7 +4469,7 @@ border-radius: 50px;
 .active-date {
   color: #fff; }
   .active-date:before {
-    background: #244092; }
+    background: #326478; }
 
 .event-date.active-date {
   background: transparent;
@@ -4689,7 +4689,7 @@ border-radius: 50px;
          }
 
          >a {
-           background: #8ebe25;
+           background: #00afab;
            color: #fff !important;
          }
        }
@@ -4702,7 +4702,7 @@ border-radius: 50px;
        padding: 0;
        position: absolute;
        background: #FCFCFC;
-       border-top: 3px solid #8ebe25;
+       border-top: 3px solid #00afab;
        visibility: hidden;
        opacity: 0;
        transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -4771,7 +4771,7 @@ border-radius: 50px;
 
              &:hover {
                a {
-                 background: #8ebe25;
+                 background: #00afab;
                  color: white;
                }
              }
@@ -4814,7 +4814,7 @@ border-radius: 50px;
            }
 
            >a {
-             background: #8ebe25;
+             background: #00afab;
              color: white;
            }
          }

@@ -113,7 +113,7 @@
 
         <section class="sec sec_pad_top  mtxs">
             <div class="wrapper">
-                <div class="row plans"  style="background: linear-gradient(90deg, #244092 0%, #244092 50%, #18b289 90%)">
+                <div class="row plans"  style="background: linear-gradient(90deg, #326478 0%, #326478 50%, #18b289 90%)">
                     <div class="col-md-6 text-center align-self-center">
                         <div style="color: #FFF;font-weight: bold;">
                             <h2 >{{trans('b2b.OUR PLANS')}}</h2>

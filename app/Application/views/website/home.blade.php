@@ -20,18 +20,13 @@
     <meta name="author" content="IGTS">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="facebook-domain-verification" content="z3li963csbvtfybzbb6kf3unwwj4v9" />
-    <title> منصة تدريب عمل المستقبل</title>
+    <title> منصة تدريب مستقبل السياحة الصحية</title>
     @if (View::hasSection('canonical'))
         @yield('canonical')
     @else
         <link rel="canonical" href="{{ url()->current() }}">
     @endif
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('subscription-new/src') }}/images/FuturWorkLogoDark.png">
-
-
-    @if (getDir() == 'rtl')
-    @else
-    @endif
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('subscription-new/src') }}/images/icon.png">
 
     <link rel="stylesheet" href="{{ asset('subscription-new/public') }}/style.css?v={{ $VERSION_NUMBER }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,83 +41,6 @@
     @livewireStyles
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Google Tag Manager -->
-{{--    <script>--}}
-{{--        (function (w, d, s, l, i) {--}}
-{{--            w[l] = w[l] || [];--}}
-{{--            w[l].push({--}}
-{{--                'gtm.start': new Date().getTime(),--}}
-{{--                event: 'gtm.js'--}}
-{{--            });--}}
-{{--            var f = d.getElementsByTagName(s)[0],--}}
-{{--                j = d.createElement(s),--}}
-{{--                dl = l != 'dataLayer' ? '&l=' + l : '';--}}
-{{--            j.async = true;--}}
-{{--            j.src =--}}
-{{--                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;--}}
-{{--            f.parentNode.insertBefore(j, f);--}}
-{{--        })(window, document, 'script', 'dataLayer', 'GTM-KC9GVX98');--}}
-{{--    </script>--}}
-    <!-- End Google Tag Manager -->
-
-    <!-- TikTok Pixel Code Start -->
-{{--    <script>--}}
-{{--        ! function (w, d, t) {--}}
-{{--            w.TiktokAnalyticsObject = t;--}}
-{{--            var ttq = w[t] = w[t] || [];--}}
-{{--            ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias",--}}
-{{--                "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"--}}
-{{--            ], ttq.setAndDefer = function (t, e) {--}}
-{{--                t[e] = function () {--}}
-{{--                    t.push([e].concat(Array.prototype.slice.call(arguments, 0)))--}}
-{{--                }--}}
-{{--            };--}}
-{{--            for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);--}}
-{{--            ttq.instance = function (t) {--}}
-{{--                for (--}}
-{{--                    var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);--}}
-{{--                return e--}}
-{{--            }, ttq.load = function (e, n) {--}}
-{{--                var r = "https://analytics.tiktok.com/i18n/pixel/events.js",--}}
-{{--                    o = n && n.partner;--}}
-{{--                ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = r, ttq._t = ttq._t || {}, ttq._t[e] = +new Date,--}}
-{{--                    ttq._o = ttq._o || {}, ttq._o[e] = n || {};--}}
-{{--                n = document.createElement("script");--}}
-{{--                n.type = "text/javascript", n.async = !0, n.src = r + "?sdkid=" + e + "&lib=" + t;--}}
-{{--                e = document.getElementsByTagName("script")[0];--}}
-{{--                e.parentNode.insertBefore(n, e)--}}
-{{--            };--}}
-
-
-{{--            ttq.load('CRGKRVBC77UD2MA17590');--}}
-{{--            ttq.page();--}}
-{{--        }(window, document, 'ttq');--}}
-{{--    </script>--}}
-    <!-- TikTok Pixel Code End -->
-
-
-    <!-- Snap Pixel Code -->
-{{--    <script type='text/javascript'>--}}
-{{--        (function (e, t, n) {--}}
-{{--            if (e.snaptr) return;--}}
-{{--            var a = e.snaptr = function () {--}}
-{{--                a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments)--}}
-{{--            };--}}
-{{--            a.queue = [];--}}
-{{--            var s = 'script';--}}
-{{--            r = t.createElement(s);--}}
-{{--            r.async = !0;--}}
-{{--            r.src = n;--}}
-{{--            var u = t.getElementsByTagName(s)[0];--}}
-{{--            u.parentNode.insertBefore(r, u);--}}
-{{--        })(window, document,--}}
-{{--            'https://sc-static.net/scevent.min.js');--}}
-
-{{--        snaptr('init', 'befc9e4c-5986-4ab6-8d33-6b723026a277', {});--}}
-
-{{--        snaptr('track', 'PAGE_VIEW');--}}
-{{--    </script>--}}
-    <!-- End Snap Pixel Code -->
 
     <style>
         .menu :where(li:not(.menu-title) > :not(ul, details, .menu-title, .btn)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
@@ -181,16 +99,6 @@
 
 <body class="h-full {{ getDir() }} ">
 
-{{--<!-- Google Tag Manager (noscript) -->--}}
-{{--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9GVX98" height="0" width="0"--}}
-{{--                  style="display:none;visibility:hidden"></iframe></noscript>--}}
-{{--<!-- End Google Tag Manager (noscript) -->--}}
-
-<!-- Google Tag Manager (noscript) -->
-{{-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGKDP6C" --}} {{-- height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> --}}
-<!-- End Google Tag Manager (noscript) -->
-
 @php
     $isWebView = false;
     if (
@@ -217,48 +125,11 @@
                 <a href="{{ url('/') }}"
                    class="text-black transition ease-in-out hover:text-green">{{ trans('home.home') }}</a>
             </li>
-            <li>
-                <details>
-                    <summary class=" text-black transition ease-in-out hover:text-green">
-                        تخصصات العمل الحر
-                    </summary>
-                    <ul class="rounded-[10px] min-w-[300px] grid grid-cols-1">
-                        @foreach (menuFutureWorkCategories() as $catF)
-                            @if (!$catF->childs->isEmpty())
-                                <li class="transition ease-in-out rounded-md hover:bg-green hover:text-white">
-                                    {{-- <a href="#"> {{$cat->name_lang}}</a> --}}
-                                    <details>
-                                        <summary class="text-black transition ease-in-out hover:text-white">
-                                            {{ $catF->name_lang }}
-                                        </summary>
 
-                                        <ul class="rounded-[10px] grid grid-cols-2">
-                                            @foreach ($catF->childs as $childF)
-                                                @if ($childF->show_menu)
-                                                    <li class="transition ease-in-out rounded-md hover:bg-green hover:text-white">
-                                                        <a
-                                                                href="/allcourses/category/{{ $childF->slug }}">{{ $childF->name_lang }}</a>
-                                                    </li>
-                                                @endif
-                                            @endforeach
-                                        </ul>
-                                    </details>
-                                </li>
-                            @else
-                                @if (!$catF->parent_id)
-                                    <li class="transition ease-in-out rounded-md hover:bg-green hover:text-white">
-                                        <a href="/allcourses/category/{{ $catF->slug }}">{{ $catF->name_lang }}</a>
-                                    </li>
-                                @endif
-                            @endif
-                        @endforeach
-                    </ul>
-                </details>
-            </li>
             <li>
                 <details>
                     <summary class=" text-black transition ease-in-out hover:text-green">
-                        تخصصات عامة
+                        جميع التخصصات
                     </summary>
                     <ul class="rounded-[10px] min-w-[300px] grid grid-cols-1">
                         @foreach (menuCategories() as $cat)
@@ -479,42 +350,42 @@
                 <li class="text-white text-[25px] font-light">
                     <a href="{{ url('/') }}">{{ trans('home.home') }}</a>
                 </li>
-                <li>
-                    <details class="main-menu-toggle">
-                        <summary class="transition ease-in-out text-white font-light text-[25px]">
-                            تخصصات العمل الحر
-                        </summary>
-                        <ul class="transition ease-in-out rounded-[10px] w-[300px] grid grid-cols-1">
-                            @foreach (menuFutureWorkCategories() as $catF)
-                                @if (!$catF->childs->isEmpty())
-                                    <li class="transition ease-in-out text-[18px] font-light text-white">
-                                        <details>
-                                            <summary class="text-white transition ease-in-out">
-                                                {{ $catF->name_lang }}
-                                            </summary>
+{{--                <li>--}}
+{{--                    <details class="main-menu-toggle">--}}
+{{--                        <summary class="transition ease-in-out text-white font-light text-[25px]">--}}
+{{--                            تخصصات العمل الحر--}}
+{{--                        </summary>--}}
+{{--                        <ul class="transition ease-in-out rounded-[10px] w-[300px] grid grid-cols-1">--}}
+{{--                            @foreach (menuFutureWorkCategories() as $catF)--}}
+{{--                                @if (!$catF->childs->isEmpty())--}}
+{{--                                    <li class="transition ease-in-out text-[18px] font-light text-white">--}}
+{{--                                        <details>--}}
+{{--                                            <summary class="text-white transition ease-in-out">--}}
+{{--                                                {{ $catF->name_lang }}--}}
+{{--                                            </summary>--}}
 
-                                            <ul class="rounded-[10px] grid grid-cols-2">
-                                                @foreach ($catF->childs as $childF)
-                                                    @if ($childF->show_menu)
-                                                        <li class="transition ease-in-out rounded-md hover:bg-green hover:text-white">
-                                                            <a href="/allcourses/category/{{ $childF->slug }}">{{ $childF->name_lang }}</a>
-                                                        </li>
-                                                    @endif
-                                                @endforeach
-                                            </ul>
-                                        </details>
-                                    </li>
-                                @else
-                                    @if (!$catF->parent_id)
-                                        <li class="transition ease-in-out text-[18px] font-light text-white">
-                                            <a href="/allcourses/category/{{ $catF->slug }}">{{ $catF->name_lang }}</a>
-                                        </li>
-                                    @endif
-                                @endif
-                            @endforeach
-                        </ul>
-                    </details>
-                </li>
+{{--                                            <ul class="rounded-[10px] grid grid-cols-2">--}}
+{{--                                                @foreach ($catF->childs as $childF)--}}
+{{--                                                    @if ($childF->show_menu)--}}
+{{--                                                        <li class="transition ease-in-out rounded-md hover:bg-green hover:text-white">--}}
+{{--                                                            <a href="/allcourses/category/{{ $childF->slug }}">{{ $childF->name_lang }}</a>--}}
+{{--                                                        </li>--}}
+{{--                                                    @endif--}}
+{{--                                                @endforeach--}}
+{{--                                            </ul>--}}
+{{--                                        </details>--}}
+{{--                                    </li>--}}
+{{--                                @else--}}
+{{--                                    @if (!$catF->parent_id)--}}
+{{--                                        <li class="transition ease-in-out text-[18px] font-light text-white">--}}
+{{--                                            <a href="/allcourses/category/{{ $catF->slug }}">{{ $catF->name_lang }}</a>--}}
+{{--                                        </li>--}}
+{{--                                    @endif--}}
+{{--                                @endif--}}
+{{--                            @endforeach--}}
+{{--                        </ul>--}}
+{{--                    </details>--}}
+{{--                </li>--}}
                 <li>
                     <details class="main-menu-toggle">
                         <summary class="transition ease-in-out text-white font-light text-[25px]">
@@ -1190,7 +1061,7 @@
 </section>
 
 
-<a href="https://wa.me/966569120330" style="    position: fixed;
+<a href="https://wa.me/#" style="    position: fixed;
     left: 0;
     margin-left: 24px;
     width: 60px;
@@ -1260,19 +1131,23 @@
 
     <!-- Social Media Icons -->
     <div class="flex justify-center gap-6 my-[50px]">
-        {{--            <a href="{{ getSetting('facebook') }}">--}}
-        {{--                <img src="{{ asset('subscription-new/src') }}/images/facebook-brands-solid.svg" alt="Facebook"--}}
-        {{--                    class="w-6 h-6" />--}}
-        {{--            </a>--}}
-        <a href="https://www.linkedin.com/company/futureworkksa/posts/?feedView=all" target="_blank">
-            <img src="{{ asset('subscription-new/src') }}/images/linked.png" alt="Instagram"
+                    <a href="https://www.facebook.com/share/18S2vFJxzW/?mibextid=wwXIfr">
+                        <img src="{{ asset('subscription-new/src') }}/images/facebook-brands-solid.svg" alt="Facebook"
+                            class="w-6 h-6" />
+                    </a>
+                    <a href="https://www.instagram.com/htf_ksa2/?utm_source=ig_web_button_share_sheet">
+                        <img src="{{ asset('subscription-new/src') }}/images/square-instagram-brands-solid.svg" alt="instagram"
+                            class="w-6 h-6" />
+                    </a>
+        <a href="https://www.linkedin.com/company/saudi-hta/" target="_blank">
+            <img src="{{ asset('subscription-new/src') }}/images/linked.png" alt="linked"
                  class="w-6 h-6" />
         </a>
-        <a href="https://www.youtube.com/channel/UCYGhbTVNiAbgQ--d5-yo8bQ" target="_blank">
+        <a href="https://youtube.com/@health.tourism.future?feature=shared" target="_blank">
             <img src="{{ asset('subscription-new/src') }}/images/square-youtube-brands-solid.svg" alt="YouTube"
                  class="w-6 h-6" />
         </a>
-        <a href="https://x.com/FutureWork_ksa" target="_blank"><img
+        <a href="https://x.com/htf_ksa" target="_blank"><img
                     src="{{ asset('subscription-new/src') }}/images/square-x-twitter-brands-solid.svg" alt="Twitter"
                     class="w-6 h-6" /></a>
     </div>
@@ -1281,7 +1156,7 @@
             class="flex flex-col items-center md:pb-0 pb-[32px] justify-between border-t md:flex-row border-grey md:pt-0 pt-[32px]">
         <!-- Copyright Notice -->
         <p class="md:text-[20px] text-[12px] text-black">
-            حقوق الطبع والنشر © 2025 Future Work.
+            حقوق الطبع والنشر © 2025 Health Tourism Future.
             <br>
             مطور محتوى
             <img src="https://igtsservice.com/website/images/logonew.webp" alt="igts"

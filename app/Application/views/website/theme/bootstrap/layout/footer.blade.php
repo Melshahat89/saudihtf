@@ -133,15 +133,24 @@
         <!-- Social Media Icons -->
         <div class="my-5 d-flex justify-content-center align-items-center">
             <div class="d-flex" style="gap: 1rem;">
-                <a href="https://www.youtube.com/channel/UCYGhbTVNiAbgQ--d5-yo8bQ" target="_blank">
+
+                    <a href="https://www.facebook.com/share/18S2vFJxzW/?mibextid=wwXIfr">
+                        <img src="{{ asset('subscription-new/src') }}/images/facebook-brands-solid.svg" alt="Facebook"
+                             style="width: 25px; height: 25px;" />
+                    </a>
+                        <a href="https://www.instagram.com/htf_ksa2/?utm_source=ig_web_button_share_sheet">
+                            <img src="{{ asset('subscription-new/src') }}/images/square-instagram-brands-solid.svg" alt="instagram"
+                                 style="width: 25px; height: 25px;" />
+                        </a>
+                <a href="https://youtube.com/@health.tourism.future?feature=shared" target="_blank">
                     <img src="{{ asset('subscription-new/src') }}/images/square-youtube-brands-solid.svg" alt="YouTube"
                         style="width: 25px; height: 25px;" />
                 </a>
-                <a href="https://x.com/FutureWork_ksa" target="_blank">
+                <a href="https://x.com/htf_ksa" target="_blank">
                     <img src="{{ asset('subscription-new/src') }}/images/square-x-twitter-brands-solid.svg"
                         alt="Twitter" style="width: 25px; height: 25px;" />
                 </a>
-                <a href="https://www.linkedin.com/company/futureworkksa/posts/?feedView=all" target="_blank">
+                <a href="https://www.linkedin.com/company/saudi-hta/" target="_blank">
                     <img src="{{ asset('subscription-new/src') }}/images/linked.png" alt="Instagram"
                          class="w-6 h-6"  style="width: 25px; height: 25px;" />
                 </a>
@@ -152,7 +161,7 @@
             class="pt-4 pb-4 d-flex flex-column flex-md-row align-items-center justify-content-between border-top pb-md-0 pt-md-0">
             <!-- Copyright Notice -->
             <p class="text-dark copyright-text" style="font-size: 20px">
-                حقوق الطبع والنشر © 2025 Future Work.
+                حقوق الطبع والنشر © 2025 Health Tourism Future.
                 <br>
 
                 مطور محتوى

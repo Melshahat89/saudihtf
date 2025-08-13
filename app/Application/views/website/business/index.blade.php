@@ -136,7 +136,7 @@
                     <li><a class="twitter-text-hvr" href="https://twitter.com/igtsgroup"><i class="fab fa-twitter"></i> </a> </li>
                     <li><a class="linkedin-text-hvr" href="https://www.linkedin.com/company/igtsgroup"><i class="fab fa-linkedin-in"></i> </a> </li>
                 </ul>
-                <p class="text-white">Copyright © 2023 Future Work. All rights reserved.</p>
+                <p class="text-white">Copyright © 2023 Health Tourism Future. All rights reserved.</p>
             </div>
         </div>
     </div>

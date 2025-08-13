@@ -70,7 +70,7 @@ form {
 	margin:0;
 	padding:0;
 }
-a{ text-decoration:none; color: #244092;}
+a{ text-decoration:none; color: #326478;}
 a:hover{ text-decoration:none; color: #1ccfc9;}
 
 .fit-image{
@@ -174,7 +174,7 @@ button:active, button:focus{ outline: 0}
     display: block;
     margin: 0 auto;}
 .loader {
-    color: #244092;
+    color: #326478;
     font-size: 90px;
     text-indent: -9999em;
     overflow: hidden;

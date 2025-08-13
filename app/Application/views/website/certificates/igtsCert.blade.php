@@ -93,7 +93,7 @@ use Carbon\Carbon;
     }   
     </style>
     <div class="content_text">
-        <p style=" font-family: 'Cairo';position: absolute; left: 0; right: 0; font-size: 50px; top: 350px; color: #244092;">
+        <p style=" font-family: 'Cairo';position: absolute; left: 0; right: 0; font-size: 50px; top: 350px; color: #326478;">
 
             <?php echo $name; ?>
 
@@ -103,9 +103,9 @@ use Carbon\Carbon;
         </p>
 {{--        <p style="direction: rtl; margin-bottom: 0;text-transform:uppercase; font-family: 'Cairo';--}}
 {{--         letter-spacing:0px;--}}
-{{--         font-size: 28px;font-weight: 700; position: absolute; right: 0; left: 0; top: 540px; color: #244092;">--}}
+{{--         font-size: 28px;font-weight: 700; position: absolute; right: 0; left: 0; top: 540px; color: #326478;">--}}
 
-        <p style=" font-family: 'Cairo';position: absolute; left: 0; right: 0; font-size: 50px; top: 500px; color: #244092;">
+        <p style=" font-family: 'Cairo';position: absolute; left: 0; right: 0; font-size: 50px; top: 500px; color: #326478;">
             <?php echo  $course->title_en;?></p>
         <p style="position: absolute; left: 380px; bottom: 60px;">{{Carbon::now()->format('Y-m-d')}}</p>
 {{--        <p style="position: absolute; right: 400px; bottom: 50px;font-family: 'Beau Rivage', cursive;font-size: 25px;">Ahmed Sabah</p>--}}

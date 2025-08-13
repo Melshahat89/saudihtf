@@ -1296,7 +1296,7 @@ body #hubspot-messages-iframe-container {
 
 @media only screen and (max-width: 767px){
     .navbar-custom ul li a, .navbar-custom.nav-light ul li a {
-        color: #244092 !important;
+        color: #326478 !important;
         font-size: .775em;
         font-family: 'open sans';
         font-weight: 600;
@@ -1361,7 +1361,7 @@ footer a {
     display: block;
     margin: 0 auto;}
 .loader {
-    color: #244092;
+    color: #326478;
     font-size: 90px;
     text-indent: -9999em;
     overflow: hidden;

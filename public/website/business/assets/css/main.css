@@ -3205,7 +3205,7 @@ table {
 [image-overlay]:before {
   position: absolute;
   content: '';
-  background: linear-gradient(75deg, #244092, #244092) !important;
+  background: linear-gradient(75deg, #326478, #326478) !important;
   width: 100%;
   height: 100%;
   top: 0;
@@ -3367,7 +3367,7 @@ table {
 
 /* line 1, src/assets/scss/objects/_objects.background.scss */
 .color-primary {
-  color: #244092 !important
+  color: #326478 !important
 }
 
 /* line 4, src/assets/scss/objects/_objects.background.scss */
@@ -3387,7 +3387,7 @@ table {
 
 /* line 14, src/assets/scss/objects/_objects.background.scss */
 .primary-bg {
-  background: #244092 !important;
+  background: #326478 !important;
 }
 
 /* line 17, src/assets/scss/objects/_objects.background.scss */
@@ -19630,7 +19630,7 @@ a.close.disabled {
 
 /* line 199, src/assets/scss/components/_components.header.scss */
 .affix {
-  background: linear-gradient(75deg, #244092, #244092) !important;
+  background: linear-gradient(75deg, #326478, #326478) !important;
   -webkit-transition: padding 0.4s ease-out;
   transition: padding 0.4s ease-out;
 }
@@ -19652,7 +19652,7 @@ a.close.disabled {
   }
   /* line 219, src/assets/scss/components/_components.header.scss */
   .navbar {
-    background: linear-gradient(75deg, #244092, #244092) !important;
+    background: linear-gradient(75deg, #326478, #326478) !important;
     padding: .45rem 1rem !important;
   }
   /* line 223, src/assets/scss/components/_components.header.scss */
@@ -20103,7 +20103,7 @@ footer a {
 
 /* line 162, src/assets/scss/components/_components.buttons.scss */
 .btn-brand-02 {
-  background-color: #244092;
+  background-color: #326478;
   border-color: #ef4326;
   color: #fff;
 }
@@ -20161,7 +20161,7 @@ footer a {
 
 /* line 208, src/assets/scss/components/_components.buttons.scss */
 .btn-outline-brand-01:hover, .btn-outline-brand-01:focus, .btn-outline-brand-01:active {
-  background-color: #244092;
+  background-color: #326478;
   border-color: #ef4326;
   color: #fff;
 }
@@ -23064,7 +23064,7 @@ footer a {
 }
 
 .dot-circle li i{
-	color: #244092;
+	color: #326478;
 	margin-right: 5px;
 	font-size: 25px;
 }
@@ -23148,7 +23148,7 @@ footer a {
 /* line 4, src/assets/scss/components/feature-section/_features-1.scss */
 .features-single-wrap span {
 	font-size: 24px;
-	background: #244092;
+	background: #326478;
 	color: #fff;
 }
 
@@ -30205,7 +30205,7 @@ a.text-dark:hover, a.text-dark:focus {
   flex-wrap: wrap;
 }
 .bunches .bunch_item .item_content .item_content_footer .item_content_price {
-  color: #244092;
+  color: #326478;
   font-weight: 500;
 }
 .bunches .bunch_item .item_content .item_content_footer del.course_old_price {

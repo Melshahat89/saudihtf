@@ -29,7 +29,7 @@ class VerifyMail extends Mailable
      */
     public function build()
     {
-        return $this->from('info@igtsservice.com', 'Future Work Confirmation')->view('website.VerifyMail')->with([
+        return $this->from('info@igtsservice.com', 'Health Tourism Future Confirmation')->view('website.VerifyMail')->with([
             'user' => $this->user,
             'returnUrl' => $this->returnUrl,
         ]);

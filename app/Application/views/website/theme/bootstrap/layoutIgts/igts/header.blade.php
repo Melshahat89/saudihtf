@@ -69,7 +69,7 @@
             </div>
             @if(Auth::check())
                 <div class="pt-2 {{ isMobile() ? 'w-100 d-flex justify-content-between' : ''}}">
-{{--                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #244092;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>--}}
+{{--                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>--}}
 {{--                    <a href="/cart"><div class="head_cart d-inline-block align-self-center"><span class="floated_count">{{ count(getShoppingCart()) }}</span><a href="/cart" class="head_cart_icon"></a></div></a>--}}
                     <div class="d-inline-block desktop-account-info-padding">
                         <a class="nav-link dropdown-toggle" href="#" id="userMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -139,7 +139,7 @@
                 </div>
             @else
                 <div class="pt-2 {{ isMobile() ? 'w-100 d-flex justify-content-between' : ''}}">
-                    <div class="button text_capitalize m-1"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #244092;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
+                    <div class="button text_capitalize m-1"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
                     <button type="button"  data-dismiss="modal" data-remote="/login" data-toggle="modal" data-target="#loginModal" class="button button_primary text_capitalize m-1">{{trans('home.signin')}}</button>
                     <button type="button"  data-dismiss="modal" data-remote="/register" data-toggle="modal" data-target="#registerModal" class="button button_primary text_capitalize regButton m-1">{{trans('home.signup')}}</button>                                                                                                                                                       <!--onclick="return gtag_report_signup_conversion(false)"-->
                 </div>
@@ -148,7 +148,7 @@
         {{--
         @if(Auth::check())
             <div class="pt-4 mobie-account-info">
-                <div class=""><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #244092;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
+                <div class=""><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
                 <a href="/cart"><div class="head_cart"><span class="floated_count">{{ count(getShoppingCart()) }}</span><a href="/cart" class="head_cart_icon"></a></div></a>
                 <div>
                     <a class="nav-link dropdown-toggle" href="#" id="userMobileMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -180,7 +180,7 @@
             </div>
         @else
             <div class="pt-4 mobie-account-info">
-                <div class="button text_capitalize"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #244092;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
+                <div class="button text_capitalize"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
                 <button type="button"  data-dismiss="modal" data-remote="/login" data-toggle="modal" data-target="#loginModal" class="button button_primary_reverse text_capitalize">{{trans('home.signin')}}</button>
                 <button type="button"  data-dismiss="modal" data-remote="/register" data-toggle="modal" data-target="#registerModal" class="button button_primary text_capitalize regButton">{{trans('home.signup')}}</button>                                                                                                                                                       <!--onclick="return gtag_report_signup_conversion(false)"-->
             </div>

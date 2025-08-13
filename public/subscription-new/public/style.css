@@ -3170,7 +3170,7 @@ input.tab:checked + .tab-content,
 
 .border-green {
   --tw-border-opacity: 1;
-  border-color: rgb(142 190 37 / var(--tw-border-opacity, 1));
+  border-color: rgb(0 175 171 / var(--tw-border-opacity, 1));
 }
 
 .border-grey {
@@ -3203,7 +3203,7 @@ input.tab:checked + .tab-content,
 
 .bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 34 63 / var(--tw-bg-opacity, 1));
+  background-color: rgb(50 100 120 / var(--tw-bg-opacity, 1));
 }
 
 .bg-coolgrey {
@@ -3238,7 +3238,7 @@ input.tab:checked + .tab-content,
 
 .bg-green {
   --tw-bg-opacity: 1;
-  background-color: rgb(142 190 37 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 175 171 / var(--tw-bg-opacity, 1));
 }
 
 .bg-indigo-50 {
@@ -3691,7 +3691,7 @@ input.tab:checked + .tab-content,
 
 .text-blue {
   --tw-text-opacity: 1;
-  color: rgb(26 34 63 / var(--tw-text-opacity, 1));
+  color: rgb(50 100 120 / var(--tw-text-opacity, 1));
 }
 
 .text-darkgrey {
@@ -3731,7 +3731,7 @@ input.tab:checked + .tab-content,
 
 .text-green {
   --tw-text-opacity: 1;
-  color: rgb(142 190 37 / var(--tw-text-opacity, 1));
+  color: rgb(0 175 171 / var(--tw-text-opacity, 1));
 }
 
 .text-indigo-500 {
@@ -4063,7 +4063,7 @@ header::after {
 }
 
 #linkArrow path {
-  fill: #8ebe25;
+  fill: #00afab;
 }
 
 #linkArrow {
@@ -4161,14 +4161,14 @@ header::after {
   display: block;
   width: 7px;
   height: 100%;
-  background-color: #8ebe25;
+  background-color: #00afab;
   position: absolute;
   left: 0;
   top: 3px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #8ebe25 !important;
+  background-color: #00afab !important;
 }
 
 .top-courses-section {
@@ -4181,7 +4181,7 @@ header::after {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #8ebe25;
+  background-color: #00afab;
 }
 
 .top-courses-slider__buttons {
@@ -4195,7 +4195,7 @@ header::after {
   display: block;
   width: 89%;
   height: 1px;
-  background-color: #8ebe25;
+  background-color: #00afab;
   position: absolute;
   top: 79%;
   left: 0;
@@ -4322,7 +4322,7 @@ header::after {
 
 .hover\:bg-blue:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 34 63 / var(--tw-bg-opacity, 1));
+  background-color: rgb(50 100 120 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-gray-100:hover {
@@ -4342,7 +4342,7 @@ header::after {
 
 .hover\:bg-green:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(142 190 37 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 175 171 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-indigo-600:hover {
@@ -4397,7 +4397,7 @@ header::after {
 
 .hover\:text-green:hover {
   --tw-text-opacity: 1;
-  color: rgb(142 190 37 / var(--tw-text-opacity, 1));
+  color: rgb(0 175 171 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover {
@@ -4564,7 +4564,7 @@ header::after {
 
 .group:hover .group-hover\:bg-green {
   --tw-bg-opacity: 1;
-  background-color: rgb(142 190 37 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 175 171 / var(--tw-bg-opacity, 1));
 }
 
 .group:hover .group-hover\:text-white {

@@ -82,9 +82,9 @@ class HomeController extends Controller
 
         $this->data['featuredAll'] = Courses::where('type',Courses::TYPE_COURSE)->where('published', 1)
             ->where('featured', 1)
-            ->whereHas('categories', function ($query) {
-                $query->where('futurework', 1);
-            })
+//            ->whereHas('categories', function ($query) {
+//                $query->where('futurework', 1);
+//            })
 
             ->skip(0)->take(8)->orderBy('sort', 'asc')->get(); //Best Learning
         $this->data['Last4'] = Courses::where('type',Courses::TYPE_COURSE)
@@ -103,9 +103,9 @@ class HomeController extends Controller
 
         $this->data['forYou'] = Courses::where('type', Courses::TYPE_COURSE)
             ->where('published', 1)
-            ->whereHas('categories', function ($query) {
-                $query->where('futurework', 1);
-            })
+//            ->whereHas('categories', function ($query) {
+//                $query->where('futurework', 1);
+//            })
             ->orderBy('created_at', 'desc')
             ->take(10)
             ->get();
@@ -118,7 +118,9 @@ class HomeController extends Controller
 
         $this->data['sliders'] = Slider::where('status', 1)->get();
         $this->data['categories'] = Categories::where('show_menu', 1)->get();
-        $this->data['homeCategories']  = Categories::whereNull('parent_id')->where('show_menu', 1)->where('futurework', 1)->limit(10)->orderBy('sort', 'ASC')->get();
+        $this->data['homeCategories']  = Categories::whereNull('parent_id')->where('show_menu', 1)
+//            ->where('futurework', 1)
+            ->limit(10)->orderBy('sort', 'ASC')->get();
 
 
         $exchangeRate = Payments::exchangeRate();

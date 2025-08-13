@@ -18,7 +18,7 @@
             padding-left: 35px;
         }
         .nav-link {
-            color: #244092;
+            color: #326478;
         }
     </style>
 @endpush

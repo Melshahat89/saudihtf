@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-    <title>Future Work</title>
+    <title>مستقبل السياحة الصحية</title>
     <style type="text/css">
         /* Some resets and issue fixes */
         body {
@@ -81,7 +81,7 @@
                             <br>
                             For more information, please see our <a href="https://igtsservice.com/page/privacyPolicy" style="text-decoration: underline;color: #ffffff;">privacy policy.</a>
                             <br>
-                            © 2021 <a href="https://igtsservice.com" style="text-decoration: underline;color: #ffffff;">Future Work</a>. All rights reserved.
+                            © 2021 <a href="https://igtsservice.com" style="text-decoration: underline;color: #ffffff;">Health Tourism Future</a>. All rights reserved.
 
                         </p>
                     </td>

@@ -13,7 +13,7 @@ const sectors = [
     {color:"#f82", label:"دبلوم مجاني", id: 1},
     {color:"#0bf", label:"15% خصم", id: 2},
     {color:"#fb0", label:"كورس 3 ايام مجاناً", id: 3},
-    {color:"#244092", label:"50 دولار كاش باك", id: 4},
+    {color:"#326478", label:"50 دولار كاش باك", id: 4},
     {color:"#b0f", label:"دورة مجانية", id: 5},
     {color:"#f0b", label:"حاول مره اخرى", id: 6},
   ];

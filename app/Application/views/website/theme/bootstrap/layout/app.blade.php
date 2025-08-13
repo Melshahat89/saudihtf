@@ -59,7 +59,7 @@
 
     {{--        <link rel="alternate" hreflang="ar-SA" href="https://igtsservice.com/ar"/>--}}
     {{--        <link rel="alternate" hreflang="ar-AE" href="https://igtsservice.com/ar"/>--}}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('subscription-new/src') }}/images/FuturWorkLogoDark.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('subscription-new/src') }}/images/icon.png">
 
 
     <link rel="preload" href="{{ asset('website') }}/css/bootstrap.min.css?v={{$VERSION_NUMBER}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -210,7 +210,7 @@
         @include(layoutContent('website'))
 
 
-        <a href="https://wa.me/966569120330" target="_blank" class="float">
+        <a href="https://wa.me/#" target="_blank" class="float">
             <i class="fab fa-whatsapp my-float" aria-hidden="true"></i>
         </a>
 

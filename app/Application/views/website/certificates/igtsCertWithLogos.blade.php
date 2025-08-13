@@ -82,9 +82,9 @@ use Carbon\Carbon;
     }   
     </style>
     <div class="content_text">
-        <p style="position: absolute; left: 0; right: 0;font-size: 50px; top: 390px; color: #244092;"><?php echo $name; ?></p>
+        <p style="position: absolute; left: 0; right: 0;font-size: 50px; top: 390px; color: #326478;"><?php echo $name; ?></p>
         <p style="font-family: 'Poppins'; text-transform:uppercase;font-size: 20px; font-weight: 700;color: #6c6c67;position: absolute; right: 0; left: 0; top: 487px;">For successfully completing the</p>
-        <p style="direction: rtl; margin-bottom: 0;text-transform:uppercase; font-family: 'Poppins'; font-size: 28px;font-weight: 700; position: absolute; right: 0; left: 0; top: 515px; color: #244092;"><?php echo  $course->title_en;?></p>
+        <p style="direction: rtl; margin-bottom: 0;text-transform:uppercase; font-family: 'Poppins'; font-size: 28px;font-weight: 700; position: absolute; right: 0; left: 0; top: 515px; color: #326478;"><?php echo  $course->title_en;?></p>
         <p style="position: absolute; left: 410px; bottom: 25;">{{Carbon::now()->format('Y-m-d')}}</p>
         <p style="position: absolute; right: 400px; bottom: 15;font-family: 'Beau Rivage', cursive;font-size: 25px;">Ahmed Sabah</p>
     </div>

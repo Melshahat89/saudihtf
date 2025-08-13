@@ -290,25 +290,25 @@
                 </p>
 
                 <div class="mt-20 social contact-social flexLeft">
-{{--                    <a href="{{ getSetting('facebook') }}" target="_blank"><i class="facebook"></i></a>--}}
-                    <a href="https://x.com/FutureWork_ksa" target="_blank"><i class="twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/futureworkksa/posts/?feedView=all" target="_blank"><i class="linkedin"></i></a>
-{{--                    <a href="{{ getSetting('instagram') }}" target="_blank"><i class="instagram"></i></a>--}}
-                    <a href="https://www.youtube.com/channel/UCYGhbTVNiAbgQ--d5-yo8bQ" target="_blank"><i class="youtube"></i></a>
+                    <a href="https://www.facebook.com/share/18S2vFJxzW/?mibextid=wwXIfr" target="_blank"><i class="facebook"></i></a>
+                    <a href="https://x.com/htf_ksa" target="_blank"><i class="twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/saudi-hta/" target="_blank"><i class="linkedin"></i></a>
+                    <a href="https://www.instagram.com/htf_ksa2/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="instagram"></i></a>
+                    <a href="https://youtube.com/@health.tourism.future?feature=shared" target="_blank"><i class="youtube"></i></a>
                 </div>
 
                 <div class="mt-20 accordion-info">
                     <div class="contact_wrapper is-arabic">
                         <div class="accordion">
-                            <label>
-                                <input class="tab-toggle" type="radio" name="my_radio_group" checked />
-                                <span class="tab-title">
-                                    <img src="https://cdn.ipwhois.io/flags/sa.svg" style="height: 10px"
-                                        class="img-rounded">
-                                    {{ trans('website.SaudiAddressTitle') }}
+{{--                            <label>--}}
+{{--                                <input class="tab-toggle" type="radio" name="my_radio_group" checked />--}}
+{{--                                <span class="tab-title">--}}
+{{--                                    <img src="https://cdn.ipwhois.io/flags/sa.svg" style="height: 10px"--}}
+{{--                                        class="img-rounded">--}}
+{{--                                    {{ trans('website.SaudiAddressTitle') }}--}}
 
-                                </span>
-                                <div class="tab">
+{{--                                </span>--}}
+{{--                                <div class="tab">--}}
 {{--                                    <p>{{ trans('website.SaudiaAddress') }}</p>--}}
 {{--                                    <iframe--}}
 {{--                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d515.6901824808658!2d46.758812!3d24.7645921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f01150b515909%3A0xa43e377813d7377e!2zSUdUUyDYtNix2YPZhyDYp9mK2KzYqtizINmE2YTYqtiv2LHZitio!5e0!3m2!1sar!2seg!4v1733147818006!5m2!1sar!2seg"--}}
@@ -316,10 +316,10 @@
 {{--                                        referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
 
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.2534679907662!2d46.7286073!3d24.786772799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efdff132802a1%3A0xf12dad9555824e75!2z2LTYsdmD2Kkg2LnZhdmEINin2YTZhdiz2KrZgtio2YQ!5e0!3m2!1sar!2seg!4v1751209405688!5m2!1sar!2seg" width="100%" height="100%" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{--                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.2534679907662!2d46.7286073!3d24.786772799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efdff132802a1%3A0xf12dad9555824e75!2z2LTYsdmD2Kkg2LnZhdmEINin2YTZhdiz2KrZgtio2YQ!5e0!3m2!1sar!2seg!4v1751209405688!5m2!1sar!2seg" width="100%" height="100%" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
 
-                                </div>
-                            </label>
+{{--                                </div>--}}
+{{--                            </label>--}}
 
 
 {{--                            <label>--}}
