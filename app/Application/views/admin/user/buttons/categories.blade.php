@@ -1,0 +1,1 @@
+{{ (App\Application\Model\Categories::find($categories)) ? App\Application\Model\Categories::find($categories)->name_lang : '' }}

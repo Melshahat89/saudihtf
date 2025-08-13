@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="icon-6" transform="translate(-45 -1251)">
+    <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(45 1251)" fill="none" stroke="#1f8fbb" stroke-width="1">
+      <circle cx="31.5" cy="31.5" r="31.5" stroke="none"/>
+      <circle cx="31.5" cy="31.5" r="31" fill="none"/>
+    </g>
+    <g id="Icon_feather-download-cloud" data-name="Icon feather-download-cloud" transform="translate(60.565 1268.642)">
+      <path id="Path_55" data-name="Path 55" d="M12,25.5l5.822,5.822L23.644,25.5" transform="translate(-1.798 -5.105)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_56" data-name="Path 56" d="M18,18V31.1" transform="translate(-1.976 -4.883)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_57" data-name="Path 57" d="M30.436,26.464a7.278,7.278,0,0,0-4.192-13.231H24.41a11.644,11.644,0,1,0-20,10.611" transform="translate(-1.486 -4.482)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

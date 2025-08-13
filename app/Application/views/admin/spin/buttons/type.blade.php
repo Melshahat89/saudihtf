@@ -1,0 +1,19 @@
+@switch($type)
+    @case(1)
+       {{trans('website.gift1')}}
+        @break
+    @case(2)
+        {{trans('website.gift2')}}
+        @break
+    @case(3)
+        {{trans('website.gift3')}}
+        @break
+    @case(4)
+        {{trans('website.gift4')}}
+        @break
+    @case(5)
+        {{trans('website.gift5')}}
+        @break
+    @default
+
+@endswitch

@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-css": "npx tailwindcss -i ./public/subscription-new/src/input-style.css -o ./public/subscription-new/public/style.css --watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "alpinejs": "^3.0.6",
+    "axios": "^0.27.2",
+    "bootstrap-sass": "^3.3.7",
+    "cross-env": "^3.2.3",
+    "jquery": "^3.1.1",
+    "laravel-mix": "^6.0.49",
+    "lodash": "^4.17.4",
+    "postcss-import": "^14.0.1",
+    "vue": "^2.1.10"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.5",
+    "caniuse-lite": "^1.0.30001697",
+    "daisyui": "^4.12.14",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.80.6",
+    "sticky-js": "^1.3.0",
+    "tailwindcss": "^3.4.14"
+  }
+}

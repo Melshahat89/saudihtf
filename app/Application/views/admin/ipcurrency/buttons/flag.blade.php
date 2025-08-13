@@ -1,0 +1,1 @@
+<img class="h-100 icon-img img-3" style="height: 25px" src="{{$country_flag}}">

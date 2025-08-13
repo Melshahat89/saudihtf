@@ -1,0 +1,1 @@
+<div class="form-group"><div class="form-line"><input type="file" class="form-control"  name="body_setting"></div></div>

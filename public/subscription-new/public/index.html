@@ -1,0 +1,1719 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iGTS - Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Tajawal:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="h-full rtl istok-web-regular">
+    <!-- Header Section -->
+    <header
+      class="flex items-center justify-between px-[30px] md:px-[90px] py-[32px] !bg-transparent"
+    >
+      <a href="/" class="block relative z-[2]">
+        <img
+          src="../src/images/logo-Ai.png"
+          alt="igts"
+          class="md:w-[124px] md:h-[63px] w-[100px] h-[50px]"
+        />
+      </a>
+
+      <div class="items-center hidden space-x-8 md:flex relative z-[2]">
+        <ul class="menu menu-horizontal rounded-box">
+          <li>
+            <a
+              href="#"
+              class="text-black transition ease-in-out hover:text-green"
+              >Home</a
+            >
+          </li>
+          <li>
+            <details>
+              <summary
+                class="gap-4 text-black transition ease-in-out hover:text-green"
+              >
+                Specialties
+              </summary>
+              <ul class="rounded-[10px] min-w-[300px] grid grid-cols-1">
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Specialties 1</a>
+                  <details>
+                    <summary
+                      class="text-black transition ease-in-out hover:text-white"
+                    >
+                      Sub-Specialties
+                    </summary>
+                    <ul class="rounded-[10px] grid grid-cols-2">
+                      <li
+                        class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                      >
+                        <a href="#">Specialties 1</a>
+                      </li>
+                      <li
+                        class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                      >
+                        <a href="#">Specialties 2</a>
+                      </li>
+                      <li
+                        class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                      >
+                        <a href="#">Specialties 3</a>
+                      </li>
+                      <li
+                        class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                      >
+                        <a href="#">Specialties 4</a>
+                      </li>
+                      <li
+                        class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                      >
+                        <a href="#">Specialties 5</a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Specialties 2</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Specialties 3</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Specialties 4</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Specialties 5</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+
+        <input
+          type="text"
+          placeholder="Search"
+          class="outline-none text-darkgrey h-[45px] py-[16px] px-[32px] rounded-full bg-coolgrey border border-darkgrey"
+        />
+      </div>
+
+      <div
+        class="text-[16px] md:flex items-center space-x-4 hidden relative z-[2]"
+      >
+        <!-- This is for the user drop-down menu  -->
+        <!-- Reusable  -->
+        <ul class="hidden menu menu-horizontal rounded-box">
+          <li>
+            <details>
+              <summary
+                class="text-black transition ease-in-out hover:text-green"
+              >
+                Hi, Jone Doe
+              </summary>
+              <ul class="rounded-[10px] w-[300px] grid grid-cols-1">
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Item 01</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Item 02</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Item 03</a>
+                </li>
+                <li
+                  class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Item 04</a>
+                </li>
+                <li
+                  class="font-bold transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                >
+                  <a href="#">Sign Out</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+        <a
+          href="javascript:void(0)"
+          onclick="createAccountModal.showModal()"
+          class="text-black underline transition ease-in-out underline-offset-2 hover:text-green hover:no-underline"
+          >Create Account</a
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="signinModal.showModal()"
+          class="h-[42px] px-4 py-2 text-white rounded-full bg-blue transition ease-in-out hover:bg-green"
+          >Sign In</a
+        >
+        <a
+          href="javascript:void(0)"
+          class="font-[tajawal] font-bold hover:text-white pb-[10px] w-[45px] h-[45px] transition ease-in-out hover:bg-green flex items-center justify-center border rounded-full border-green text-green"
+          >ع</a
+        >
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="!flex hamburger md:!hidden">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav
+          class="flex flex-col items-center justify-center transition ease-in-out mobile-menu"
+        >
+          <ul
+            class="transition ease-in-out menu menu-vertical w-full px-[30px] gap-4"
+          >
+            <li class="text-white text-[25px] font-light">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <details>
+                <summary
+                  class="transition ease-in-out text-white font-light text-[25px]"
+                >
+                  Specialties
+                </summary>
+                <ul
+                  class="transition ease-in-out rounded-[10px] w-[300px] grid grid-cols-1"
+                >
+                  <li
+                    class="transition ease-in-out text-[18px] font-light text-white"
+                  >
+                    <details>
+                      <summary class="text-white transition ease-in-out">
+                        Sub-Specialties
+                      </summary>
+                      <ul class="rounded-[10px] grid grid-cols-2">
+                        <li
+                          class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                        >
+                          <a href="#">Specialties 1</a>
+                        </li>
+                        <li
+                          class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                        >
+                          <a href="#">Specialties 2</a>
+                        </li>
+                        <li
+                          class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                        >
+                          <a href="#">Specialties 3</a>
+                        </li>
+                        <li
+                          class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                        >
+                          <a href="#">Specialties 4</a>
+                        </li>
+                        <li
+                          class="transition ease-in-out rounded-md hover:bg-green hover:text-white"
+                        >
+                          <a href="#">Specialties 5</a>
+                        </li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li
+                    class="transition ease-in-out text-[18px] font-light text-white"
+                  >
+                    <a href="#">Specialties 2</a>
+                  </li>
+                  <li
+                    class="transition ease-in-out text-[18px] font-light text-white"
+                  >
+                    <a href="#">Specialties 3</a>
+                  </li>
+                  <li
+                    class="transition ease-in-out text-[18px] font-light text-white"
+                  >
+                    <a href="#">Specialties 4</a>
+                  </li>
+                  <li
+                    class="transition ease-in-out text-[18px] font-light text-white"
+                  >
+                    <a href="#">Specialties 5</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+
+          <div
+            class="text-[16px] flex flex-col items-center w-full mt-6 px-[30px]"
+          >
+            <input
+              type="text"
+              placeholder="Search"
+              value=""
+              class="outline-none w-full text-darkgrey h-[45px] py-[16px] px-[32px] rounded-full bg-coolgrey border border-darkgrey"
+            />
+            <div
+              class="flex items-center justify-center w-full gap-4 py-[20px]"
+            >
+              <a
+                href="javascript:void(0)"
+                onclick="createAccountModal.showModal()"
+                class="text-white text-[14px] underline transition ease-in-out underline-offset-2 hover:text-green hover:no-underline"
+                >Create Account</a
+              >
+              <a
+                href="javascript:void(0)"
+                onclick="signinModal.showModal()"
+                class="h-[42px] px-4 py-2 text-white rounded-full bg-green transition ease-in-out hover:bg-white hover:text-green"
+                >Sign In</a
+              >
+              <a
+                href="javascript:void(0)"
+                class="font-[tajawal] font-bold hover:text-white pb-[10px] w-[45px] h-[45px] transition ease-in-out hover:bg-white flex items-center justify-center border rounded-full border-white text-white"
+                >ع</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section px-[30px] md:px-[90px] pt-[40px] md:pt-[80px]">
+      <div
+        class="flex flex-col items-start justify-between md:items-center md:flex-row"
+      >
+        <div
+          class="hero-section__content border-decoration ltr:pl-[22px] rtl:pr-[22px]"
+        >
+          <h1 class="hero-section__title text-blue md:text-[40px] text-[30px]">
+            Chase It,
+            <br />
+            You're Almost There!
+          </h1>
+        </div>
+        <div class="hero-section__description w-full md:w-[546px]">
+          <p class="text-babydark md:text-[14px] text-[12px] mt-[15px] md:mt-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <a
+            href="#"
+            class="text-white text-[12px] md:text-[14px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[145px] h-[35px] flex items-center justify-center rounded-full"
+            >Subscriptions</a
+          >
+        </div>
+      </div>
+      <div class="hero-section__image mt-[60px]">
+        <div class="swiper md:h-[650px] h-[400px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-full h-[300px] md:h-[650px] object-cover"
+                src="../src/images/hero-image.jpg"
+                alt="hero-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-[300px] md:h-[650px] object-cover"
+                src="../src/images/hero-image.jpg"
+                alt="hero-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-[300px] md:h-[650px] object-cover"
+                src="../src/images/hero-image.jpg"
+                alt="hero-image"
+              />
+            </div>
+          </div>
+
+          <div class="swiper-pagination pb-[20px]"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Courses Section -->
+    <section
+      class="top-courses-section mt-[50px] md:mt-[100px] px-[30px] md:px-[90px] pt-0 py-[60px]"
+    >
+      <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+        <h2 class="text-black md:text-[40px] text-[30px] font-bold">
+          Top Courses
+        </h2>
+        <p class="text-babydark md:text-[32px] text-[20px]">
+          Discover, the most requested courses
+        </p>
+      </div>
+      <div class="mt-[50px] top-courses-slider">
+        <div class="swiper h-[550px] relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <img
+                  class="rounded-[10px] w-full h-[250px] object-cover"
+                  src="../src/images/top-courses.png"
+                  alt="hero-image"
+                />
+                <h3 class="text-black mt-[15px] text-[24px]">Course Title</h3>
+                <p class="text-babydark mt-[15px] text-[14px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div
+                  class="inline-flex px-[15px] items-center mt-[20px] justify-center bg-coolgrey h-[35px] rounded-full gap-2"
+                >
+                  <span class="text-green text-[14px]">4.5K</span>
+                  <span class="text-[14px] text-babydark">Views</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <img
+                  class="rounded-[10px] w-full h-[250px] object-cover"
+                  src="../src/images/top-courses.png"
+                  alt="hero-image"
+                />
+                <h3 class="text-black mt-[15px] text-[24px]">Course Title</h3>
+                <p class="text-babydark mt-[15px] text-[14px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div
+                  class="inline-flex px-[15px] items-center mt-[20px] justify-center bg-coolgrey h-[35px] rounded-full gap-2"
+                >
+                  <span class="text-green text-[14px]">4.5K</span>
+                  <span class="text-[14px] text-babydark">Views</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <img
+                  class="rounded-[10px] w-full h-[250px] object-cover"
+                  src="../src/images/top-courses.png"
+                  alt="hero-image"
+                />
+                <h3 class="text-black mt-[15px] text-[24px]">Course Title</h3>
+                <p class="text-babydark mt-[15px] text-[14px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div
+                  class="inline-flex px-[15px] items-center mt-[20px] justify-center bg-coolgrey h-[35px] rounded-full gap-2"
+                >
+                  <span class="text-green text-[14px]">4.5K</span>
+                  <span class="text-[14px] text-babydark">Views</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <img
+                  class="rounded-[10px] w-full h-[250px] object-cover"
+                  src="../src/images/top-courses.png"
+                  alt="hero-image"
+                />
+                <h3 class="text-black mt-[15px] text-[24px]">Course Title</h3>
+                <p class="text-babydark mt-[15px] text-[14px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div
+                  class="inline-flex px-[15px] items-center mt-[20px] justify-center bg-coolgrey h-[35px] rounded-full gap-2"
+                >
+                  <span class="text-green text-[14px]">4.5K</span>
+                  <span class="text-[14px] text-babydark">Views</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <img
+                  class="rounded-[10px] w-full h-[250px] object-cover"
+                  src="../src/images/top-courses.png"
+                  alt="hero-image"
+                />
+                <h3 class="text-black mt-[15px] text-[24px]">Course Title</h3>
+                <p class="text-babydark mt-[15px] text-[14px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div
+                  class="inline-flex px-[15px] items-center mt-[20px] justify-center bg-coolgrey h-[35px] rounded-full gap-2"
+                >
+                  <span class="text-green text-[14px]">4.5K</span>
+                  <span class="text-[14px] text-babydark">Views</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center bottom-0 justify-end gap-4 top-courses-slider__buttons pt-[48px]"
+          >
+            <div class="button-prev">
+              <img src="../src/images/arrow-left.svg" alt="arrow-left" />
+            </div>
+            <div class="button-next">
+              <img src="../src/images/arrow-right.svg" alt="arrow-right" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suggested Courses Section -->
+    <section
+      class="mt-[50px] md:mt-[100px] px-[30px] md:px-[90px] py-[60px] bg-coolgrey grid grid-cols-1 md:grid-cols-2 items-center"
+    >
+      <div class="md:ltr:pr-[100px] ltr:pr-0 md:rtl:pl-[100px] rtl:pl-0">
+        <h3
+          class="text-green text-[45px] lg:text-[80px] md:text-[60px] font-bold"
+        >
+          Suggest Courses
+        </h3>
+        <h4
+          class="text-babydark text-[18px] lg:text-[32px] md:text-[24px] mt-[15px]"
+        >
+          With the power of AI. Discover, the powerful suggested courses
+        </h4>
+        <p class="text-babydark md:text-[14px] text-[12px] mt-[15px]">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas nulla pariatur
+        </p>
+      </div>
+      <div
+        class="suggest-courses-slider mt-[50px] md:mt-0 md:ltr:pl-[50px] md:rtl:pr-[50px] ltr:pl-0 rtl:pr-0"
+      >
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <div
+                  class="flex md:flex-row flex-col items-center gap-[20px] w-full"
+                >
+                  <img
+                    class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                    src="../src/images/top-courses.png"
+                    alt="hero-image"
+                  />
+                  <div class="w-full">
+                    <h3 class="text-black text-[24px] font-bold">
+                      Course Title
+                    </h3>
+                    <p class="text-babydark mt-[10px] text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="inline-flex px-[15px] items-center mt-[10px] justify-center bg-green h-[35px] rounded-full gap-2"
+                    >
+                      <span class="text-white text-[14px]">4.5K</span>
+                      <span class="text-[14px] text-white">Views</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <div
+                  class="flex md:flex-row flex-col items-center gap-[20px] w-full"
+                >
+                  <img
+                    class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                    src="../src/images/top-courses.png"
+                    alt="hero-image"
+                  />
+                  <div class="w-full">
+                    <h3 class="text-black text-[24px] font-bold">
+                      Course Title
+                    </h3>
+                    <p class="text-babydark mt-[10px] text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="inline-flex px-[15px] items-center mt-[10px] justify-center bg-green h-[35px] rounded-full gap-2"
+                    >
+                      <span class="text-white text-[14px]">4.5K</span>
+                      <span class="text-[14px] text-white">Views</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <div
+                  class="flex md:flex-row flex-col items-center gap-[20px] w-full"
+                >
+                  <img
+                    class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                    src="../src/images/top-courses.png"
+                    alt="hero-image"
+                  />
+                  <div class="w-full">
+                    <h3 class="text-black text-[24px] font-bold">
+                      Course Title
+                    </h3>
+                    <p class="text-babydark mt-[10px] text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="inline-flex px-[15px] items-center mt-[10px] justify-center bg-green h-[35px] rounded-full gap-2"
+                    >
+                      <span class="text-white text-[14px]">4.5K</span>
+                      <span class="text-[14px] text-white">Views</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block">
+                <div
+                  class="flex md:flex-row flex-col items-center gap-[20px] w-full"
+                >
+                  <img
+                    class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                    src="../src/images/top-courses.png"
+                    alt="hero-image"
+                  />
+                  <div class="w-full">
+                    <h3 class="text-black text-[24px] font-bold">
+                      Course Title
+                    </h3>
+                    <p class="text-babydark mt-[10px] text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="inline-flex px-[15px] items-center mt-[10px] justify-center bg-green h-[35px] rounded-full gap-2"
+                    >
+                      <span class="text-white text-[14px]">4.5K</span>
+                      <span class="text-[14px] text-white">Views</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="block md:hidden swiper-pagination"></div>
+        </div>
+        <div
+          class="items-center justify-center hidden gap-4 rotate-90 md:flex top-courses-slider__buttons"
+        >
+          <div class="button-prev">
+            <img src="../src/images/arrow-left.svg" alt="arrow-left" />
+          </div>
+          <div class="button-next">
+            <img src="../src/images/arrow-right.svg" alt="arrow-right" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px]">
+      <div class="flex flex-col items-center justify-center text-center">
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+          Featured Courses
+        </h3>
+        <p class="text-babydark text-[14px] mt-[10px]">
+          We provide a group of selected courses for you
+        </p>
+      </div>
+      <div class="mt-[64px] featured-courses-list">
+        <a href="#" class="block group">
+          <div
+            class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]"
+          >
+            <img
+              class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+              src="../src/images/top-courses.png"
+              alt="hero-image"
+            />
+            <div class="w-full mx-[20px]">
+              <h3
+                class="text-green group-hover:text-white text-[24px] font-bold"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </h3>
+              <p
+                class="text-babydark group-hover:text-white mt-[10px] text-[14px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div
+                class="inline-flex items-center mt-[10px] justify-cente gap-2"
+              >
+                <span class="text-green text-[14px]">4.5K</span>
+                <span class="text-[14px] text-green">Views</span>
+              </div>
+            </div>
+            <svg
+              id="linkArrow"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 52 52"
+            >
+              <path
+                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a href="#" class="block group">
+          <div
+            class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]"
+          >
+            <img
+              class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+              src="../src/images/top-courses.png"
+              alt="hero-image"
+            />
+            <div class="w-full mx-[20px]">
+              <h3
+                class="text-green group-hover:text-white text-[24px] font-bold"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </h3>
+              <p
+                class="text-babydark group-hover:text-white mt-[10px] text-[14px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div
+                class="inline-flex items-center mt-[10px] justify-cente gap-2"
+              >
+                <span class="text-green text-[14px]">4.5K</span>
+                <span class="text-[14px] text-green">Views</span>
+              </div>
+            </div>
+            <svg
+              id="linkArrow"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 52 52"
+            >
+              <path
+                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a href="#" class="block group">
+          <div
+            class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]"
+          >
+            <img
+              class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+              src="../src/images/top-courses.png"
+              alt="hero-image"
+            />
+            <div class="w-full mx-[20px]">
+              <h3
+                class="text-green group-hover:text-white text-[24px] font-bold"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </h3>
+              <p
+                class="text-babydark group-hover:text-white mt-[10px] text-[14px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div
+                class="inline-flex items-center mt-[10px] justify-cente gap-2"
+              >
+                <span class="text-green text-[14px]">4.5K</span>
+                <span class="text-[14px] text-green">Views</span>
+              </div>
+            </div>
+            <svg
+              id="linkArrow"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 52 52"
+            >
+              <path
+                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a href="#" class="block group">
+          <div
+            class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]"
+          >
+            <img
+              class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+              src="../src/images/top-courses.png"
+              alt="hero-image"
+            />
+            <div class="w-full mx-[20px]">
+              <h3
+                class="text-green group-hover:text-white text-[24px] font-bold"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </h3>
+              <p
+                class="text-babydark group-hover:text-white mt-[10px] text-[14px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div
+                class="inline-flex items-center mt-[10px] justify-cente gap-2"
+              >
+                <span class="text-green text-[14px]">4.5K</span>
+                <span class="text-[14px] text-green">Views</span>
+              </div>
+            </div>
+            <svg
+              id="linkArrow"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewBox="0 0 52 52"
+            >
+              <path
+                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        
+
+        <div class="flex justify-center">
+          <a
+            href="#"
+            class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-blue hover:bg-green w-[265px] h-[55px] flex items-center justify-center rounded-full"
+            >View All Courses</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Plans Section -->
+    <section
+      class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] py-[80px] bg-coolgrey flex flex-col md:flex-row items-center"
+    >
+      <div
+        class="md:w-[30%] w-full md:items-start items-center flex flex-col text-center md:text-left"
+      >
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+          Our Plans
+        </h3>
+        <p class="text-babydark text-[20px] lg:text-[32px] mt-[10px]">
+          Discover, the interested two plans
+        </p>
+        <p class="text-babydark text-[14px] mt-[20px]">
+          With just one subscription, you can enjoy more than 400 courses in
+          various fields and enjoy all the new rewards in addition to the
+          platform.
+        </p>
+        <a
+          href="#"
+          class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full"
+          >Signup To Subscribe</a
+        >
+      </div>
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:w-[70%] w-full md:mt-0 mt-[50px]"
+      >
+        <div
+          class="text-center cursor-pointer flex flex-col justify-between h-[500px] lg:h-[650px] min-w-[350px] lg:min-w-[560px] p-[32px] gradient-blue rounded-[20px]"
+          onclick="annualModal.showModal()"
+        >
+          <h4
+            class="text-white pb-[32px] text-[40px] font-bold border-b border-white uppercase"
+          >
+            ANNUAL
+          </h4>
+          <div class="text-white">
+            <h2 class="text-[80px] lg:text-[120px] font-bold leading-[1]">
+              2100
+            </h2>
+            <h3 class="text-[24px] lg:text-[32px] uppercase">EGP/YEAR</h3>
+            <div class="mt-[10px] flex items-center justify-center gap-4">
+              <p
+                class="text-[32px] lg:text-[48px] font-bold line-through text-white/45"
+              >
+                4200
+              </p>
+              <span class="text-[20px] lg:text-[24px] text-white/45 uppercase"
+                >EGP/YEAR</span
+              >
+            </div>
+          </div>
+          <div
+            class="text-white flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-white uppercase w-full"
+          >
+            Recommended
+          </div>
+        </div>
+        <div
+          class="text-center cursor-pointer flex flex-col justify-between h-[420px] lg:h-[483px] min-w-[350px] lg:min-w-[560px] p-[32px] bg-white md:ltr:rounded-br-[20px] md:ltr:rounded-tr-[20px] md:ltr:rounded-bl-0 md:ltr:rounded-tl-0 md:rtl:rounded-bl-[20px] md:rtl:rounded-tl-[20px] md:rtl:rounded-br-0 md:rtl:rounded-tr-0 ltr:rounded-br-[20px] ltr:rounded-bl-[20px] ltr:rounded-tr-0 ltr:rounded-tl-0 rtl:rounded-br-[20px] rtl:rounded-bl-[20px] rtl:rounded-tr-0 rtl:rounded-tl-0"
+          onclick="monthlyModal.showModal()"
+        >
+          <h4
+            class="text-green pb-[32px] text-[40px] font-bold border-b border-green uppercase"
+          >
+            MONTHLY
+          </h4>
+          <div class="text-green">
+            <h2 class="text-[80px] lg:text-[120px] font-bold leading-[1]">
+              350
+            </h2>
+            <h3 class="text-[24px] lg:text-[32px] uppercase">EGP</h3>
+          </div>
+          <div
+            class="text-babydark flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-green uppercase w-full"
+          >
+            Billed Monthly
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section
+      class="our-partners-section md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]"
+    >
+      <div class="flex flex-col items-center justify-center text-center">
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+          Our Partners
+        </h3>
+        <p class="text-babydark text-[14px] mt-[10px]">
+          Discover our success partners
+        </p>
+      </div>
+
+      <div class="partners-section__image relative mt-[60px]">
+        <div class="swiper h-[250px]">
+          <div class="swiper-wrapper pb-[50px]">
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="flex p-[50px] items-center justify-center bg-coolgrey md:rounded-full rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full"
+              >
+                <img
+                  src="../src/images/partneer-logo.svg"
+                  alt="partner-image"
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="-bottom-[20px] swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialities Section -->
+    <section
+      class="specialities-section relative mt-[50px] md:px-[90px] px-[30px] md:py-[60px] py-[30px] bg-coolgrey reverse-cols-md grid md:grid-cols-2 grid-cols-1 items-center"
+    >
+      <div
+        class="Specialities-slider mt-[30px] ltr:pr-0 rtl:pl-0 md:ltr:pr-[50px] md:rtl:pl-[50px]"
+      >
+        <div class="swiper md:h-[600px] h-[400px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Child Education"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  CHILD EDUCATION
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Marketing and Sales"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  MARKETING AND SALES
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Law"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  LAW
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Financial Management and Accounting"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  FINANCIAL MANAGEMENT AND ACCOUNTING
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Financial Management and Accounting"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  FINANCIAL MANAGEMENT AND ACCOUNTING
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Financial Management and Accounting"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  FINANCIAL MANAGEMENT AND ACCOUNTING
+                </h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="relative">
+                <img
+                  src="../src/images/top-courses.png"
+                  alt="Financial Management and Accounting"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black rounded-lg opacity-50"
+                ></div>
+                <h2
+                  class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]"
+                >
+                  FINANCIAL MANAGEMENT AND ACCOUNTING
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="block swiper-pagination md:hidden"></div>
+        </div>
+        <div
+          class="items-center justify-center hidden gap-4 rotate-90 md:flex Specialities-slider__buttons"
+        >
+          <div class="button-prev">
+            <img src="../src/images/arrow-left.svg" alt="arrow-left" />
+          </div>
+          <div class="button-next">
+            <img src="../src/images/arrow-right.svg" alt="arrow-right" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="md:ltr:pl-[100px] ltr:pl-0 md:rtl:pr-[100px] rtl:pr-0 order-first md:order-last"
+      >
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+          <h2 class="text-black md:text-[40px] text-[25px]">Specialities</h2>
+          <p class="text-babydark md:text-[32px] text-[18px]">
+            Discover, the powerful specialties
+          </p>
+        </div>
+        <p class="text-babydark md:text-[14px] text-[12px] mt-[21px]">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          qui dolorem eum fugiat quo voluptas nulla pariatur
+        </p>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section
+      class="instructors-section md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]"
+    >
+      <div class="flex flex-col items-center justify-center text-center">
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+          Instructors
+        </h3>
+        <p class="text-babydark text-[14px] mt-[10px]">
+          Discover our professional Instructors
+        </p>
+      </div>
+
+      <div class="partners-section__image relative mt-[60px]">
+        <div class="swiper md:h-[450px] h-[400px]">
+          <div class="swiper-wrapper md:pb-0 pb-[120px]">
+            <div class="swiper-slide">
+              <div class="flex flex-col w-full h-[300px]">
+                <img
+                  src="../src/images/Instructors.png"
+                  alt="instructor-image"
+                  class="object-cover w-full h-full rounded-[10px]"
+                />
+                <h3
+                  class="text-black text-[32px] lg:text-[40px] font-bold mt-[15px]"
+                >
+                  Jon Doe
+                </h3>
+                <p class="text-babydark lg:text-[32px] text-[26px]">
+                  Master, Lorem ipsuem
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col w-full h-[300px]">
+                <img
+                  src="../src/images/Instructors.png"
+                  alt="instructor-image"
+                  class="object-cover w-full h-full rounded-[10px]"
+                />
+                <h3
+                  class="text-black text-[32px] lg:text-[40px] font-bold mt-[15px]"
+                >
+                  Jon Doe
+                </h3>
+                <p class="text-babydark lg:text-[32px] text-[26px]">
+                  Master, Lorem ipsuem
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col w-full h-[300px]">
+                <img
+                  src="../src/images/Instructors.png"
+                  alt="instructor-image"
+                  class="object-cover w-full h-full rounded-[10px]"
+                />
+                <h3
+                  class="text-black text-[32px] lg:text-[40px] font-bold mt-[15px]"
+                >
+                  Jon Doe
+                </h3>
+                <p class="text-babydark lg:text-[32px] text-[26px]">
+                  Master, Lorem ipsuem
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col w-full h-[300px]">
+                <img
+                  src="../src/images/Instructors.png"
+                  alt="instructor-image"
+                  class="object-cover w-full h-full rounded-[10px]"
+                />
+                <h3
+                  class="text-black text-[32px] lg:text-[40px] font-bold mt-[15px]"
+                >
+                  Jon Doe
+                </h3>
+                <p class="text-babydark lg:text-[32px] text-[26px]">
+                  Master, Lorem ipsuem
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-col w-full h-[300px]">
+                <img
+                  src="../src/images/Instructors.png"
+                  alt="instructor-image"
+                  class="object-cover w-full h-full rounded-[10px]"
+                />
+                <h3
+                  class="text-black text-[32px] lg:text-[40px] font-bold mt-[15px]"
+                >
+                  Jon Doe
+                </h3>
+                <p class="text-babydark lg:text-[32px] text-[26px]">
+                  Master, Lorem ipsuem
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !bottom-0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section
+      class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] text-center h-[380px]"
+    >
+      <div
+        class="bg-blue rounded-[28px] h-full w-full flex items-center justify-center"
+      >
+        <div class="md:w-[70%] w-[100%]">
+          <h2 class="md:text-[40px] text-[28px] font-bold text-white">
+            Our Newsletter
+          </h2>
+          <p class="mb-6 md:text-[32px] text-[20px] text-white">
+            Discover our latest offers
+          </p>
+          <form class="flex justify-center">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="ltr:pl-[35px] rtl:pr-[35px] py-[20px] text-black placeholder-white bg-white/50 focus:outline-none w-[80%] md:w-[90%] ltr:rounded-l-full rtl:rounded-r-full"
+            />
+            <button
+              class="px-4 py-[20px] text-white bg-white/50 ltr:rounded-r-full rtl:rounded-l-full"
+            >
+              <img src="../src/images/send.svg" alt="submit-button" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-[40px] text-center md:px-[90px] px-[30px]">
+      <!-- Footer Links -->
+      <div class="flex justify-center gap-4 mt-6 text-gray-800">
+        <a href="#" class="hover:underline text-[12px] md:text-[14px]"
+          >SPECIALTIES</a
+        >
+        <a href="#" class="hover:underline text-[12px] md:text-[14px]"
+          >ABOUT US</a
+        >
+        <a href="#" class="hover:underline text-[12px] md:text-[14px]"
+          >CONTACT</a
+        >
+        <a href="#" class="hover:underline text-[12px] md:text-[14px]">FAQ</a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex justify-center gap-6 my-[50px]">
+        <a href="#"
+          ><img
+            src="../src/images/facebook-brands-solid.svg"
+            alt="Facebook"
+            class="w-6 h-6"
+        /></a>
+        <a href="#"
+          ><img
+            src="../src/images/square-instagram-brands-solid.svg"
+            alt="Instagram"
+            class="w-6 h-6"
+        /></a>
+        <a href="#"
+          ><img
+            src="../src/images/square-youtube-brands-solid.svg"
+            alt="YouTube"
+            class="w-6 h-6"
+        /></a>
+        <a href="#"
+          ><img
+            src="../src/images/square-x-twitter-brands-solid.svg"
+            alt="Twitter"
+            class="w-6 h-6"
+        /></a>
+      </div>
+
+      <div
+        class="flex flex-col items-center md:pb-0 pb-[32px] justify-between border-t md:flex-row border-grey md:pt-0 pt-[32px]"
+      >
+        <!-- Copyright Notice -->
+        <p class="md:text-[16px] text-[12px] text-black">
+          COPYRIGHT © 2024 IGTS. ALL RIGHTS RESERVED.
+        </p>
+
+        <!-- Payment Methods -->
+        <div class="flex justify-center gap-4 md:py-0 py-[20px]">
+          <div class="w-[300px]">
+            <img
+              src="../src/images/payments.png"
+              alt="Payments"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+        <!-- Footer Bottom Links -->
+        <div class="flex justify-center gap-4 text-sm text-black">
+          <a href="#" class="hover:underline md:text-[16px] text-[12px]"
+            >TERMS AND CONDITIONS</a
+          >
+          <span>-</span>
+          <a href="#" class="hover:underline md:text-[16px] text-[12px]"
+            >PRIVACY POLICY</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="signinModal" class="modal">
+      <div class="modal-box">
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+          <h2 class="text-black text-[25px] font-bold">Signin</h2>
+          <p class="text-babydark mt-[10px] text-[18px]">
+            Try diffrent ways to signin
+          </p>
+        </div>
+
+        <div class="flex flex-row justify-center mt-[50px] gap-4">
+          <button class="btn">
+            <img
+              src="../src/images/google-brands-solid.svg"
+              alt="google-icon"
+              class="w-6 h-6 mr-[10px]"
+            />
+            with Google
+          </button>
+          <button class="btn">
+            <img
+              src="../src/images/facebook-brands-solid.svg"
+              alt="facebook-icon"
+              class="w-6 h-6 mr-[10px]"
+            />
+            with Facebook
+          </button>
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog" class="flex flex-col w-full gap-4">
+            <label class="flex items-center gap-2 input input-bordered">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4 opacity-70"
+              >
+                <path
+                  d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                />
+                <path
+                  d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                />
+              </svg>
+              <input type="text" class="grow" placeholder="Email" />
+            </label>
+
+            <label class="flex items-center gap-2 input input-bordered">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4 opacity-70"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <input type="password" class="grow" value="password" />
+            </label>
+            <button class="text-white hover:text-black btn bg-green">
+              Signin
+            </button>
+            <button class="btn">Cancel</button>
+            <div>
+              <a href="#" class="link">Create an account</a> -
+              <a href="#" class="link">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="createAccountModal" class="modal">
+      <div class="modal-box">
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+          <h2 class="text-black text-[25px] font-bold">Create Account</h2>
+          <p class="text-babydark mt-[10px] text-[18px]">
+            Try diffrent ways to create your account
+          </p>
+        </div>
+
+        <div class="flex flex-row justify-center mt-[50px] gap-4">
+          <button class="btn">
+            <img
+              src="../src/images/google-brands-solid.svg"
+              alt="google-icon"
+              class="w-6 h-6 mr-[10px]"
+            />
+            With Google
+          </button>
+          <button class="btn">
+            <img
+              src="../src/images/facebook-brands-solid.svg"
+              alt="facebook-icon"
+              class="w-6 h-6 mr-[10px]"
+            />
+            With Facebook
+          </button>
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog" class="flex flex-col w-full gap-4">
+            <div class="flex flex-row gap-2">
+              <label class="flex items-center gap-2 input input-bordered">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4 opacity-70"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z"
+                  />
+                </svg>
+                <input type="text" class="grow" placeholder="Username" />
+              </label>
+
+              <label class="flex items-center gap-2 input input-bordered">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4 opacity-70"
+                >
+                  <path
+                    d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                  />
+                  <path
+                    d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                  />
+                </svg>
+                <input type="text" class="w-[50%]" placeholder="Email" />
+              </label>
+            </div>
+
+            <select class="w-full select select-bordered">
+              <option disabled selected>Select Country</option>
+              <option>Egypt</option>
+              <option>USA</option>
+            </select>
+
+            <select class="w-full select select-bordered">
+              <option disabled selected>Select specialization</option>
+              <option>Lorem ipsum</option>
+              <option>Lorem ipsum</option>
+            </select>
+
+            <div class="flex flex-row gap-2">
+              <label class="flex items-center gap-2 input input-bordered">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4 opacity-70"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <input type="password" class="w-[50%]" value="password" />
+              </label>
+              <label class="flex items-center gap-2 input input-bordered">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="w-4 h-4 opacity-70"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <input type="password" class="w-[50%]" value="password" />
+              </label>
+            </div>
+
+            <button class="text-white hover:text-black btn bg-green">
+              Create Account
+            </button>
+            <button class="btn">Cancel</button>
+            <div>
+              <p class="text-babydark text-[14px]">
+                By completing your registeration, you agree to Meduo's
+                <a
+                  class="text-green"
+                  href="https://igtsservice.com/page/termsOfUse"
+                  >Terms &amp; Conditions</a
+                >
+                and
+                <a
+                  class="text-green"
+                  href="https://igtsservice.com/page/privacyPolicy"
+                  >Privacy Policy</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="annualModal" class="modal">
+      <div class="modal-box">
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+          <h2 class="text-black text-[25px] font-bold">Checkout</h2>
+          <p class="text-babydark mt-[10px] text-[18px]">
+            Annual Plan
+          </p>
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog" class="flex flex-col w-full gap-4">
+            <label class="flex items-center gap-2 input input-bordered">
+              <input type="text" class="grow" placeholder="Add Coupon Code" />
+            </label>
+            <button class="text-white hover:text-black btn bg-green mb-[25px]">
+              Add Coupon
+            </button>
+            <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+              <h2 class="text-black text-[25px] font-bold">Payment Method</h2>
+              <p class="text-babydark mt-[10px] text-[18px]">
+                Secure Checkout 
+              </p>
+            </div>
+            <div class="flex flex-row items-center">
+              <a target="_blank" class="bg-coolgrey hover:bg-[#f7f7f7] rounded-[10px] text-center w-full inline-block p-[10px]" href="https://uae.paymob.com/api/acceptance/iframes/10064?payment_token=ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5WDJsa0lqb3hNVEF6TkN3aVlXMXZkVzUwWDJObGJuUnpJam94TlRFd055d2lZM1Z5Y21WdVkza2lPaUpCUlVRaUxDSnBiblJsWjNKaGRHbHZibDlwWkNJNk1UUTBOamtzSW05eVpHVnlYMmxrSWpvNE1UZzNNVGNzSW1KcGJHeHBibWRmWkdGMFlTSTZleUptYVhKemRGOXVZVzFsSWpvaVFXaHRaV1FnVFc5b2MyVnVJaXdpYkdGemRGOXVZVzFsSWpvaVFXaHRaV1FnVFc5b2MyVnVJaXdpYzNSeVpXVjBJam9pVGtFaUxDSmlkV2xzWkdsdVp5STZJazVCSWl3aVpteHZiM0lpT2lKT1FTSXNJbUZ3WVhKMGJXVnVkQ0k2SWs1Qklpd2lZMmwwZVNJNklrNUJJaXdpYzNSaGRHVWlPaUpPUVNJc0ltTnZkVzUwY25raU9pSk9RU0lzSW1WdFlXbHNJam9pWVM1dGIyaHpaVzR1T0RWQVoyMWhhV3d1WTI5dElpd2ljR2h2Ym1WZmJuVnRZbVZ5SWpvaU1qQXhNVFV6TmpZME5UYzNJaXdpY0c5emRHRnNYMk52WkdVaU9pSk9RU0lzSW1WNGRISmhYMlJsYzJOeWFYQjBhVzl1SWpvaVRrRWlmU3dpYkc5amExOXZjbVJsY2w5M2FHVnVYM0JoYVdRaU9tWmhiSE5sTENKbGVIUnlZU0k2ZTMwc0luTnBibWRzWlY5d1lYbHRaVzUwWDJGMGRHVnRjSFFpT21aaGJITmxMQ0psZUhBaU9qRTNNekV6TkRRd09UTXNJbkJ0YTE5cGNDSTZJalEyTGpFMk5TNHlOREl1TnpNaWZRLk93M2g4X0phOWV5YzVhdV9IU2JIZzVqT0tkakVld0RvWUxiSTNDMFdmVGp0VEgzN3RabEJFOFFPSFloanFrLVh0QUZOZVg0WFdWUEJKVDJqLXpTVm53">
+                <img class="block m-auto" src="../src/images/new-visa.png" width="200" height="200" />
+              </a>
+            </div>
+           
+            <button class="btn">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="monthlyModal" class="modal">
+      <div class="modal-box">
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+          <h2 class="text-black text-[25px] font-bold">Checkout</h2>
+          <p class="text-babydark mt-[10px] text-[18px]">
+            Monthly Plan
+          </p>
+        </div>
+
+        <div class="modal-action">
+          <form method="dialog" class="flex flex-col w-full gap-4">
+            <label class="flex items-center gap-2 input input-bordered">
+              <input type="text" class="grow" placeholder="Add Coupon Code" />
+            </label>
+            <button class="text-white hover:text-black btn bg-green mb-[25px]">
+              Add Coupon
+            </button>
+            <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+              <h2 class="text-black text-[25px] font-bold">Payment Method</h2>
+              <p class="text-babydark mt-[10px] text-[18px]">
+                Secure Checkout 
+              </p>
+            </div>
+            <div class="flex flex-row items-center">
+              <a target="_blank" class="bg-coolgrey hover:bg-[#f7f7f7] rounded-[10px] text-center w-full inline-block p-[10px]" href="https://uae.paymob.com/api/acceptance/iframes/10064?payment_token=ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFjMlZ5WDJsa0lqb3hNVEF6TkN3aVlXMXZkVzUwWDJObGJuUnpJam94TlRFd055d2lZM1Z5Y21WdVkza2lPaUpCUlVRaUxDSnBiblJsWjNKaGRHbHZibDlwWkNJNk1UUTBOamtzSW05eVpHVnlYMmxrSWpvNE1UZzNNVGNzSW1KcGJHeHBibWRmWkdGMFlTSTZleUptYVhKemRGOXVZVzFsSWpvaVFXaHRaV1FnVFc5b2MyVnVJaXdpYkdGemRGOXVZVzFsSWpvaVFXaHRaV1FnVFc5b2MyVnVJaXdpYzNSeVpXVjBJam9pVGtFaUxDSmlkV2xzWkdsdVp5STZJazVCSWl3aVpteHZiM0lpT2lKT1FTSXNJbUZ3WVhKMGJXVnVkQ0k2SWs1Qklpd2lZMmwwZVNJNklrNUJJaXdpYzNSaGRHVWlPaUpPUVNJc0ltTnZkVzUwY25raU9pSk9RU0lzSW1WdFlXbHNJam9pWVM1dGIyaHpaVzR1T0RWQVoyMWhhV3d1WTI5dElpd2ljR2h2Ym1WZmJuVnRZbVZ5SWpvaU1qQXhNVFV6TmpZME5UYzNJaXdpY0c5emRHRnNYMk52WkdVaU9pSk9RU0lzSW1WNGRISmhYMlJsYzJOeWFYQjBhVzl1SWpvaVRrRWlmU3dpYkc5amExOXZjbVJsY2w5M2FHVnVYM0JoYVdRaU9tWmhiSE5sTENKbGVIUnlZU0k2ZTMwc0luTnBibWRzWlY5d1lYbHRaVzUwWDJGMGRHVnRjSFFpT21aaGJITmxMQ0psZUhBaU9qRTNNekV6TkRRd09UTXNJbkJ0YTE5cGNDSTZJalEyTGpFMk5TNHlOREl1TnpNaWZRLk93M2g4X0phOWV5YzVhdV9IU2JIZzVqT0tkakVld0RvWUxiSTNDMFdmVGp0VEgzN3RabEJFOFFPSFloanFrLVh0QUZOZVg0WFdWUEJKVDJqLXpTVm53">
+                <img class="block m-auto" src="../src/images/new-visa.png" width="200" height="200" />
+              </a>
+            </div>
+           
+            <button class="btn">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="icon-3" transform="translate(-707 -1258)">
+    <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(707 1258)" fill="none" stroke="#1f8fbb" stroke-width="1">
+      <circle cx="31.5" cy="31.5" r="31.5" stroke="none"/>
+      <circle cx="31.5" cy="31.5" r="31" fill="none"/>
+    </g>
+    <g id="Icon_feather-users" data-name="Icon feather-users" transform="translate(721.109 1273.919)">
+      <path id="Path_60" data-name="Path 60" d="M26.8,31.986V28.824A6.324,6.324,0,0,0,20.472,22.5H7.824A6.324,6.324,0,0,0,1.5,28.824v3.162" transform="translate(-1.5 -3.528)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_61" data-name="Path 61" d="M20.148,10.824A6.324,6.324,0,1,1,13.824,4.5,6.324,6.324,0,0,1,20.148,10.824Z" transform="translate(-1.176 -4.5)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_62" data-name="Path 62" d="M34.743,31.976V28.814A6.324,6.324,0,0,0,30,22.7" transform="translate(0.04 -3.517)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_63" data-name="Path 63" d="M24,4.7a6.324,6.324,0,0,1,0,12.253" transform="translate(-0.285 -4.489)" fill="none" stroke="#1f8fbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

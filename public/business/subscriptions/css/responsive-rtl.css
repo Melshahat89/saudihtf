@@ -1,0 +1,384 @@
+
+
+/* SMARTPHONE POTRAIT to TABLET POTRAITS */
+@media only screen and (min-width:300px) and (max-width:767px) {
+
+    /* Typography */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Generals */
+    .hide-mobile {
+        display: none;
+    }
+    .mt-mobile-20{ margin-top: 20px;}
+    .mb-mobile-20{ margin-bottom: 20px;}
+    .mb-mobile-50{ margin-bottom: 50px;}
+    .m-0-mobile{ margin: 0;}
+    .w-60, .w-80{ width: 100% !important;}
+    .show-mobile {
+        display: block !important;
+    }
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .MobileflexColCenter{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .mobileCenter{width: 100%;text-align: center;display: block;padding: 14px;}
+    .mobileCenter a{
+        margin: 0;
+        display: block;
+    }
+    
+    .navbar-brand span {
+        font-size: 12px;
+    }
+
+    .navbar-collapse.flexBetween{
+        display: block;
+    }
+    .navbar-collapse{
+        margin-top: 15px;
+    }
+    .header-container{
+        padding-top: 15px;
+    }
+    .navbar-collapse{
+        background-color: #1f8fbb;
+    }
+    .navbar-collapse .solid_btn{
+        background-color: #fff;
+        color: #1f8fbb;
+    }
+    .navbar-nav{
+        margin-top: 15px;
+    }
+    .content_area p {
+        width: 100%;
+      }
+
+    .hero-section img{
+        height: 100vh;
+    }
+    .content_area{
+        margin-top: 30px;
+    }
+    .content_area h1 {
+        font-size: 26px;
+    }
+    .content_area p {
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+    .content_area h2 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .feat-title {
+        font-size: 24px;
+        padding-right: 70px;
+    }
+    .feature-item img {
+        padding: 0 10px;
+    }
+    .feature-item p {
+        font-size: 15px;
+    }
+    .plans{
+        padding: 50px 0 0px 0;
+    }
+    .plan-content h2{
+        font-size: 24px
+    }
+    .plan-content p{
+        margin-bottom: 40px;
+    }
+    .plan-card {
+        margin-bottom: 70px;
+        width: 280px;
+    }
+    .plan-card h3{
+        font-size: 20px
+    }
+    .price p{
+        font-size: 25px
+    }
+    .price span{
+        font-size: 15px
+    }
+    .discount{
+        font-size: 13px
+    }
+    .faq p{
+        width: 100%;
+    }
+    .accordion .card .card-header .btn-header-link{
+        font-size: 16px;
+    }
+    .card-body{
+        font-size: 14px;
+        line-height: 20px
+    }
+    .footer-image {
+        width: 55%;
+    }
+    .footer-content{
+        font-size: 12px;
+    }
+    .copywrite p{ font-size: 12px;}
+}
+
+/* TABLET LANDSCAPE SMALLER DESKTOP */
+@media only screen and (min-width:992px) and (max-width:1260px) {
+    .nav-item{margin: 0px 5px;}
+    .solid_btn{
+        padding: 10px 13px;
+    }
+    .nav-link{
+        padding: 5px 10px !important;
+    }
+    .content_area h1{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .content_area h2{
+        font-size: 20px;
+    }
+    .content_area p{
+        width: 100%;
+    }
+    .feat-title {
+        font-size: 28px;
+        padding-right: 70px;
+    }
+    .feature-item p{
+        font-size: 19px;
+    }
+    .plan-card {
+        width: 250px;
+    }
+}
+
+/* TABLETS PORTRAIT to SMALLER DESKTOP */
+@media only screen and (min-width:991px) and (max-width:1024px) {
+
+    .nav-item{margin: 0px 5px;}
+    .solid_btn{
+        padding: 10px 13px;
+    }
+    .nav-link{
+        padding: 5px 10px !important;
+    }
+    .content_area h1{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .content_area h2{
+        font-size: 20px;
+    }
+    .content_area p{
+        width: 100%;
+    }
+    .feat-title {
+        font-size: 28px;
+        padding-right: 70px;
+    }
+    .feature-item p{
+        font-size: 19px;
+    }
+    .plan-card {
+        width: 250px;
+    }
+}
+
+
+/* TABLETS PORTRAIT to LANDSCAPE */
+@media only screen and (min-width:768px) and (max-width:990px) {
+
+    /* Typography */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Generals */
+    .hide-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block !important;
+    }
+    .mt-mobile-20{ margin-top: 20px;}
+    .mb-mobile-20{ margin-bottom: 20px;}
+    .m-0-mobile{ margin: 0;}
+    .show-mobile {
+        display: block !important;
+    }
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .MobileflexColCenter{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .mobileCenter{width: 100%;text-align: center;display: block;padding: 14px;}
+    .mobileCenter a{
+        margin: 0;
+        display: block;
+    }
+    .navbar-brand span {
+        font-size: 12px;
+    }
+    .navbar-collapse.flexBetween{
+        display: block;
+    }
+    .navbar-collapse{
+        margin-top: 15px;
+    }
+    .navbar-nav{
+        margin-top: 15px;
+    }
+    .w-60, .w-80{ width: 100% !important;}
+
+
+
+    .content_area p {
+        width: 100%;
+      }
+
+    .hero-section img{
+        height: 100vh;
+    }
+    .content_area{
+        margin-top: 30px;
+    }
+    .content_area h1 {
+        font-size: 26px;
+    }
+    .content_area p {
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+    .content_area h2 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .feat-title {
+        font-size: 24px;
+        padding-right: 70px;
+    }
+    .feature-item img {
+        padding: 0 10px;
+    }
+    .feature-item p {
+        font-size: 15px;
+    }
+    .plans{
+        padding: 50px 0 0px 0;
+    }
+    .plan-content h2{
+        font-size: 24px
+    }
+    .plan-content p{
+        margin-bottom: 80px;
+    }
+    .plan-card {
+        margin-bottom: 70px;
+    }
+    .plan-card h3{
+        font-size: 20px
+    }
+    .price p{
+        font-size: 25px
+    }
+    .price span{
+        font-size: 15px
+    }
+    .discount{
+        font-size: 13px
+    }
+    .faq p{
+        width: 100%;
+    }
+    .accordion .card .card-header .btn-header-link{
+        font-size: 16px;
+    }
+    .card-body{
+        font-size: 14px;
+        line-height: 20px
+    }
+    
+    .footer-image {
+        width: 25%;
+    }
+    .footer-content{
+        font-size: 12px;
+    }
+    .copywrite p{ font-size: 12px;}
+    .reverse-mobile-stop{ flex-direction: inherit !important}
+    .row-item-content p{ font-size: 12px;}
+
+}
+
+/* ALL DEVICES SMALLER THAN TABLET LANDSCAPE */
+@media only screen and (max-width:991px) {
+
+    
+}

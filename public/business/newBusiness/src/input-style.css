@@ -1,0 +1,441 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fff;
+  }
+}
+
+/***** Custom *****/
+
+@font-face {
+  font-family: "URWGeometricArabic";
+  src: url("fonts/URWGeometricArabic-ExtraBold.woff2") format("woff2"),
+    url("fonts/URWGeometricArabic-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.hero-section__title {
+  font-family: "URWGeometricArabic" !important;
+}
+@font-face {
+  font-family: "URWGeometricArabic";
+  src: url("fonts/URWGeometricArabic-Regular.woff2") format("woff2"),
+    url("fonts/URWGeometricArabic-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: "URWGeometricArabic" !important;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rtl body {
+  font-family: "URWGeometricArabic" !important;
+}
+.rtl p {
+  font-family: "URWGeometricArabic" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.rtl h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+p,
+div {
+  font-family: "URWGeometricArabic" !important;
+  font-weight: inherit;
+  font-style: normal;
+  font-display: swap;
+}
+.rtl .mobile-menu {
+  left: unset;
+  right: 0;
+}
+
+.rtl header::after {
+  left: unset;
+  right: 0;
+}
+
+.rtl .border-decoration::before {
+  content: "";
+  left: unset;
+  right: 0;
+}
+
+.rtl .top-courses-slider__buttons::after {
+  content: "";
+  left: unset;
+  right: 0;
+}
+
+.rtl .suggest-courses-slider .top-courses-slider__buttons {
+  right: -55%;
+  left: unset;
+}
+
+.rtl .Specialities-slider__buttons {
+  left: unset;
+  right: 48.4%;
+}
+
+.rtl .button-prev {
+  transform: rotate(180deg);
+}
+
+.rtl .button-next {
+  transform: rotate(180deg);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.menu :where(li ul):before {
+  position: absolute;
+  bottom: 0.75rem;
+  inset-inline-start: 0px;
+  top: 0.75rem;
+  width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: oklch(1 0 0);
+  opacity: 0.1;
+  content: "";
+}
+
+.feat-card:hover #linkArrow path {
+  fill: theme("colors.white");
+}
+
+@media (max-width: 768px) {
+  .footer-container .grid {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+}
+
+.list-icon {
+  background-image: url(../src/images/check-square.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 4px;
+  padding-right: 35px;
+}
+
+.services-section .list-icon {
+  background-image: url(../src/images/check-square-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 5px;
+  padding-right: 35px;
+}
+
+.digital-transformation-section .list-icon {
+  background-image: url(../src/images/check-square-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 5px;
+  padding-right: 35px;
+}
+
+.subscriptions-page .list-icon {
+  background-image: url(../src/images/check-square-green.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 5px;
+  padding-right: 35px;
+}
+
+.offline-training-page .list-icon {
+  background-image: url(../src/images/check-square-skyblue.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 5px;
+  padding-right: 35px;
+}
+
+.feat-card:hover .list-icon {
+  background-image: url(../src/images/check-square-white.svg);
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: right 5px;
+  padding-right: 35px;
+}
+
+/* Hamburger icon styling */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+.hamburger--active span {
+  background-color: #fff !important;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: theme("colors.primary");
+  transition: all 0.3s ease;
+}
+
+.subscriptions-page .hamburger span {
+  background-color: theme("colors.subscriptionsTheme.primary");
+}
+
+.offline-training-page .hamburger span {
+  background-color: theme("colors.offlineTrainingTheme.primary");
+}
+
+.professional-certificates-page .hamburger span {
+  background-color: theme("colors.certificationsTheme.primary");
+} 
+
+.digital-transformation-page .hamburger span {
+  background-color: theme("colors.digitalTransformationTheme.primary");
+}
+
+
+
+.hamburger--active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger--active span:nth-child(2) {
+  opacity: 0;
+}
+
+.country-select{
+  width: 100%;
+}
+
+.flag-dropdown{
+  direction: ltr;
+}
+
+.hamburger--active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu ul {
+  list-style: none;
+}
+
+/* Show menu when active */
+.mobile-menu--active {
+  transform: translateY(0);
+}
+
+/* Hide hamburger icon on larger screens */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hero-section__content {
+  position: relative;
+}
+
+.border-decoration::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 100%;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.professional-certificates-section .swiper {
+  width: 100%;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.professional-certificates-section .swiper .swiper-slide div {
+  height: 255px !important;
+  width: 255px !important;
+}
+
+.professional-certificates-section .swiper .swiper-slide img {
+  height: 150px !important;
+  width: 150px !important;
+}
+
+.subscriptions-page .inner-features-section .swiper-pagination-bullet-active,
+.subscriptions-page .partners-section__image .swiper-pagination-bullet-active {
+  background-color: theme("colors.subscriptionsTheme.primary") !important;
+}
+
+.offline-training-page .inner-features-section .swiper-pagination-bullet-active,
+.offline-training-page .partners-section__image .swiper-pagination-bullet-active {
+  background-color: theme("colors.offlineTrainingTheme.primary") !important;
+}
+
+.professional-certificates-page .inner-features-section .swiper-pagination-bullet-active,
+.professional-certificates-page .partners-section__image .swiper-pagination-bullet-active,
+.professional-certificates-page .professional-certificates-section .swiper-pagination-bullet-active {
+  background-color: theme("colors.certificationsTheme.primary") !important;
+}
+
+.digital-transformation-page .inner-features-section .swiper-pagination-bullet-active,
+.digital-transformation-page .partners-section__image .swiper-pagination-bullet-active {
+  background-color: theme("colors.digitalTransformationTheme.primary") !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.business-features-section .swiper-pagination-bullet {
+  background-color: theme("colors.white/25") !important;
+}
+
+.our-partners-section .swiper-pagination-bullet-active,
+.testimonials-section .swiper-pagination-bullet-active {
+  background-color: theme("colors.primary") !important;
+}
+
+.subscriptions-page .inner-features-section .swiper-pagination-bullet-active {
+  background-color: theme("colors.subscriptionsTheme.primary") !important;
+}
+
+.our-partners-section .swiper-pagination-bullet,
+.testimonials-section .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-pagination-bullet {
+  width: 80px !important;
+  height: 2px !important;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
+.gradient-blue {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    343deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(36, 64, 146, 1) 54%,
+    rgba(66, 95, 188, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#425fbc",GradientType=1);
+}
+
+.text-shadow {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+}
+
+@media (max-width: 1300px) {
+  header::after {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  header::after {
+    display: none;
+  }
+
+  .our-partners-section .swiper-pagination-bullet,
+  .testimonials-section .swiper-pagination-bullet,
+  .professional-certificates-section .swiper-pagination-bullet,
+  .business-features-section .swiper-pagination-bullet,
+  .inner-features-section .swiper-pagination-bullet,
+  .why-us-section .swiper-pagination-bullet,
+  .partners-section .swiper-pagination-bullet,
+  .our-partners-section .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30px !important;
+    height: 2px !important;
+    margin-bottom: 15px !important;
+  }
+
+
+
+  .professional-certificates-section .swiper {
+    width: 100%;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .professional-certificates-section .swiper .swiper-slide div {
+    height: 300px !important;
+    width: 300px !important;
+    padding: 10px !important;
+  }
+  
+  .professional-certificates-section .swiper .swiper-slide img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  .subscriptions-page .hero-section__image .swiper-pagination-bullet-active {
+    background-color: theme("colors.subscriptionsTheme.primary") !important;
+  }
+  
+  .main-theme .hero-section__image .swiper-pagination-bullet-active {
+    background-color: theme("colors.primary") !important;
+  }
+
+  .offline-training-page .hero-section__image .swiper-pagination-bullet-active {
+    background-color: theme("colors.offlineTrainingTheme.primary") !important;
+  } 
+
+  .professional-certificates-page .hero-section__image .swiper-pagination-bullet-active {
+    background-color: theme("colors.certificationsTheme.primary") !important;
+  } 
+
+  .digital-transformation-page .hero-section__image .swiper-pagination-bullet-active {
+    background-color: theme("colors.digitalTransformationTheme.primary") !important;
+  } 
+
+  .professional-certificates-section .swiper-button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}

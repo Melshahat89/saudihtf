@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "476018509638",
+    "project_id": "new-igts---ga4-decbc",
+    "storage_bucket": "new-igts---ga4-decbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476018509638:android:d246f279a250f1beb8c747",
+        "android_client_info": {
+          "package_name": "com.igts.igts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476018509638-bdcu7mfijr2io9et9peqbnjdqtbeavnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbOfJqhYuz1Q0LrhEzgMlepD-Dg9tUJV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476018509638-bdcu7mfijr2io9et9peqbnjdqtbeavnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

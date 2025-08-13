@@ -1,0 +1,1 @@
+{{ (App\Application\Model\User::find($id) && count(App\Application\Model\User::find($id)->courseenrollment)) > 0 ? 'YES' : 'NO' }}

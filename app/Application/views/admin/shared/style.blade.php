@@ -1,0 +1,2 @@
+<link rel="stylesheet" href="{{ url('/') }}/website/datatables/responsive/css/responsive.bootstrap.css">
+<link rel="stylesheet" href="{{ url('/') }}/website/datatables/responsive/css/responsive.dataTables.css">

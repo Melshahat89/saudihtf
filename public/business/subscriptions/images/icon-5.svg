@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="icon-5" transform="translate(-49 -1114)">
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(49 1114)" fill="none" stroke="#1f8fbb" stroke-width="1">
+      <circle cx="31.5" cy="31.5" r="31.5" stroke="none"/>
+      <circle cx="31.5" cy="31.5" r="31" fill="none"/>
+    </g>
+    <path id="Icon_material-queue-play-next" data-name="Icon material-queue-play-next" d="M30.034,4.5H4.353A2.844,2.844,0,0,0,1.5,7.353v17.12a2.853,2.853,0,0,0,2.853,2.853h7.133v2.853H22.9V27.327h2.853V24.474H4.353V7.353H30.034V18.767h2.853V7.353A2.853,2.853,0,0,0,30.034,4.5ZM18.62,14.487v-4.28H15.767v4.28h-4.28V17.34h4.28v4.28H18.62V17.34H22.9V14.487ZM34.314,25.9l-6.42,6.42-2.14-2.14,4.28-4.28-4.28-4.28,2.14-2.14Z" transform="translate(62.74 1126.881)" fill="#1f8fbb"/>
+  </g>
+</svg>

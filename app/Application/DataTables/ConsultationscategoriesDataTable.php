@@ -1,0 +1,111 @@
+<?php
+
+namespace App\Application\DataTables;
+
+use App\Application\Model\Consultationscategories;
+use Yajra\DataTables\Services\DataTable;
+
+class ConsultationscategoriesDataTable extends DataTable
+{
+    /**
+     * Display ajax response.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function ajax()
+    {
+        return datatables()
+             ->eloquent($this->query())
+             ->addColumn('id', 'admin.consultationscategories.buttons.id')
+             ->addColumn('title', function($query){
+                return $query->name_lang;
+             })
+             ->addColumn('edit', 'admin.consultationscategories.buttons.edit')
+             ->addColumn('delete', 'admin.consultationscategories.buttons.delete')
+             ->addColumn('view', 'admin.consultationscategories.buttons.view')
+             ->rawColumns(['id', 'edit', 'delete', 'view'])
+             ->make(true);
+    }
+    /**
+     * Get the query object to be processed by dataTables.
+     *
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder|\Illuminate\Support\Collection
+     */
+    public function query()
+    {
+        $query = Consultationscategories::query();
+
+        return $this->applyScopes($query);
+    }
+
+    /**
+     * Optional method if you want to use html builder.
+     *
+     * @return \Yajra\Datatables\Html\Builder
+     */
+    public function html()
+    {
+        return $this->builder()
+                    ->columns($this->getColumns())
+                    ->parameters(dataTableConfig());
+    }
+    /**
+     * Get columns.
+     *
+     * @return array
+     */
+    protected function getColumns()
+    {
+        return [
+              [
+                  'name' => "id",
+                  'data' => 'id',
+                  'title' => trans('curd.id'),
+             ],
+			[
+                'name' => 'title',
+                'data' => 'title',
+                'title' => 'Title',
+                ],
+               
+             [
+                  'name' => 'view',
+                  'data' => 'view',
+                  'title' => trans('curd.view'),
+                  'exportable' => false,
+                  'printable' => false,
+                  'searchable' => false,
+                  'orderable' => false,
+             ],
+             [
+                  'name' => 'edit',
+                  'data' => 'edit',
+                  'title' =>  trans('curd.edit'),
+                  'exportable' => false,
+                  'printable' => false,
+                  'searchable' => false,
+                  'orderable' => false,
+             ],
+             [
+                   'name' => 'delete',
+                   'data' => 'delete',
+                   'title' => trans('curd.delete'),
+                   'exportable' => false,
+                   'printable' => false,
+                   'searchable' => false,
+                   'orderable' => false,
+             ],
+
+        ];
+    }
+
+    /**
+     * Get filename for export.
+     *
+     * @return string
+     */
+    protected function filename()
+    {
+        return 'Consultationscategoriesdatatables_' . time();
+    }
+}
