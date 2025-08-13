@@ -63,7 +63,10 @@
 @endpush
 
 @push('js')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ asset('website/subscriptions') }}/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 @endpush
 @section('content')
 
@@ -104,13 +107,13 @@
                             <span class="mr-2 ml-2">{{ round($course->CourseRating, 1) }} ( {{ $course->CourseCountRating}} {{trans('courses.ratings')}} )</span>--}}
                             <div class="show-mobile d-none">
                                 @if(Auth::check())
-                                    @if($enrolled)
-
+                                    @if($enrolled && optional($course->courselectures)->first())
                                         <a class="button button_primary button_large add_cart track" href="{{ url('/courses/courseLecture/id/' . $course->courselectures[0]['id']) }}">
                                             <i class="fas fa-play track"></i>
                                             {{ trans('b2b.Start Learn') }}
                                         </a>
                                     @endif
+
                                     <a href="/courses/toggleFavourite/id/{{$course->id}}" class=" button button_primary2 button_large add_wishlist <?= ($wishListed) ? 'active' :  '' ?>"  data-course-id="{{$course->id}}">
                                         @else
                                             <a href="javascript:void(0)" data-dismiss="modal" data-remote="/login" data-toggle="modal" data-target="#loginModal" class="button button_primary2 button_large">
@@ -195,7 +198,7 @@
                                         @endif
                                     @endif
 
-                                @elseif($enrolled)
+                                @elseif($enrolled && optional($course->courselectures)->first())
                                     <a class="button button_primary button_large add_cart track" href="{{ url('/courses/courseLecture/id/' . $course->courselectures[0]['id'])  }}">
                                         {{ trans('b2b.Start Learn') }}
                                         <i class="fas fa-play track"></i>
@@ -515,37 +518,99 @@
                                 </div>
                             @endif
 
-                            <div class="course_column_info_inner mtxs b_all">
-                                <div class="about_auther">
-                                    @if(count($course->courseincludes) > 0)
-                                        <h3 class="text_primary mblg text_capitalize">{{trans('website.about igts')}}</h3>
-                                        <figure class="mbsm">
-                                            <a href="javascript:void(0)">
-                                                <img src="{{ asset('website') }}/images/igts-instructor-logo.jpeg" style="width: 100px;">
-                                            </a>
-                                        </figure>
-                                        <div class="auther_name mbmd">
-                                            <h5 class="mbxs"><a href="javascript: void(0)">IGTS</a></h5>
-                                        </div>
-                                        <div>{{trans('website.About IGTS')}}</div>
-                                    @else
-                                        <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
-                                        <figure class="mbsm">
-                                            <a href="/instructors/view/{{$course->instructor->slug}}">
+                                <div class="course_column_info_inner mtxs b_all">
+                                    <div class="about_auther">
+                                        @if(count($course->courseincludes) > 0)
+                                            <h3 class="text_primary mblg text_capitalize">{{trans('website.about igts')}}</h3>
+                                            <figure class="mbsm">
+                                                <a href="javascript:void(0)">
+                                                    <img src="{{ asset('website') }}/images/igts-instructor-logo.jpeg" style="width: 100px;">
+                                                </a>
+                                            </figure>
+                                            <div class="auther_name mbmd">
+                                                <h5 class="mbxs"><a href="javascript: void(0)">IGTS</a></h5>
+                                            </div>
+                                            <div>{{trans('website.About IGTS')}}</div>
+                                        @else
 
-                                                @if($course->instructor->image)
-                                                    <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
-                                                @endif
-                                            </a>
-                                        </figure>
-                                        <div class="auther_name mbmd">
-                                            <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
-                                            <span class="auther_title">{{$course->instructor->title_lang}}</span>
-                                        </div>
-                                        <div>{!!$course->instructor->about_lang!!}</div>
-                                    @endif
+                                            @if($course->type  ==  Courses::TYPE_PROFESSIONAL_CERTIFICATES)
+                                                @isset($course->professionalcertificates[0])
+                                                    <h3 class="text_primary mblg text_capitalize">{{trans('courses.about certificate')}}</h3>
+                                                    <div class="container mt-4">
+                                                        <div class="card shadow-lg border-0">
+                                                            <div class="card-body">
+                                                                <div class="d-flex flex-column gap-3">
+                                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                        <span class="fw-bold">📅  {{trans('professionalcertificates.startdate')}}:</span>
+                                                                        <span>{{$course->professionalcertificates[0]['startdate']}}</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                        <span class="fw-bold">⏰ {{trans('professionalcertificates.appointment')}}:</span>
+                                                                        <span>{{trans('professionalcertificates.Yes')}}</span>
+                                                                    </div>
+
+                                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                        <span class="fw-bold">📆  {{trans('professionalcertificates.days')}}:</span>
+                                                                        <span>{{$course->professionalcertificates[0]['days']}}</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                        <span class="fw-bold">⏳  {{trans('professionalcertificates.hours')}}:</span>
+                                                                        <span> {{$course->professionalcertificates[0]['hours']}}</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                        <span class="fw-bold">🎟  {{trans('professionalcertificates.seats')}}:</span>
+                                                                        <span class="text-success fw-bold">{{$course->professionalcertificates[0]['seats']}}</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <span class="fw-bold">🔚   {{trans('professionalcertificates.registrationdeadline')}}:</span>
+                                                                        <span> {{$course->professionalcertificates[0]['registrationdeadline']}} </span>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <div class="text-center mt-4">
+
+
+                                                                    @if(Auth::check())
+                                                                        <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                                                            {{trans('account.Enroll Now')}}
+                                                                        </button>
+
+                                                                    @else
+                                                                        <a href="javascript:void(0)" data-dismiss="modal" data-remote="/login" data-toggle="modal" data-target="#loginModal" class="btn btn-primary btn-lg mt-3">
+                                                                            {{trans('account.Enroll Now')}}
+                                                                        </a>
+                                                                    @endif
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endisset
+
+
+
+                                            @else
+                                                <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
+
+                                                <figure class="mbsm">
+                                                    <a href="/instructors/view/{{$course->instructor->slug}}">
+
+                                                        @if($course->instructor->image)
+                                                            <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
+                                                        @endif
+                                                    </a>
+                                                </figure>
+                                                <div class="auther_name mbmd">
+                                                    <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
+                                                    <span class="auther_title">{{$course->instructor->title_lang}}</span>
+                                                </div>
+                                                <div>{!!$course->instructor->about_lang!!}</div>
+                                            @endif
+
+                                        @endif
+                                    </div>
                                 </div>
-                            </div>
 
                             @if($course->tags)
                                 <div class="course_column_info_inner mtxs b_all">
@@ -816,20 +881,70 @@
                                                 </div>
                                                 <div>{{trans('website.Footer IGTS')}}</div>
                                             @else
-                                                <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
-                                                <figure class="mbsm">
-                                                    <a href="/instructors/view/{{$course->instructor->slug}}">
+                                                @if($course->type  ==  Courses::TYPE_PROFESSIONAL_CERTIFICATES)
+                                                    @isset($course->professionalcertificates[0])
+                                                        <h3 class="text_primary mblg text_capitalize">{{trans('courses.about certificate')}}</h3>
+                                                        <div class="container mt-4">
+                                                            <div class="card shadow-lg border-0">
+                                                                <div class="card-body">
+                                                                    <div class="d-flex flex-column gap-3">
+                                                                        <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                            <span class="fw-bold">📅  {{trans('professionalcertificates.startdate')}}:</span>
+                                                                            <span>{{$course->professionalcertificates[0]['startdate']}}</span>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                            <span class="fw-bold">⏰ {{trans('professionalcertificates.appointment')}}:</span>
+                                                                            <span>{{trans('professionalcertificates.Yes')}}</span>
+                                                                        </div>
 
-                                                        @if($course->instructor->image)
-                                                            <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
-                                                        @endif
-                                                    </a>
-                                                </figure>
-                                                <div class="auther_name mbmd">
-                                                    <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
-                                                    <span class="auther_title">{{$course->instructor->title_lang}}</span>
-                                                </div>
-                                                <div>{!!$course->instructor->about_lang!!}</div>
+                                                                        <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                            <span class="fw-bold">📆  {{trans('professionalcertificates.days')}}:</span>
+                                                                            <span>{{$course->professionalcertificates[0]['days']}}</span>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                            <span class="fw-bold">⏳  {{trans('professionalcertificates.hours')}}:</span>
+                                                                            <span> {{$course->professionalcertificates[0]['hours']}}</span>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-between border-bottom pb-2">
+                                                                            <span class="fw-bold">🎟  {{trans('professionalcertificates.seats')}}:</span>
+                                                                            <span class="text-success fw-bold">{{$course->professionalcertificates[0]['seats']}}</span>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <span class="fw-bold">🔚   {{trans('professionalcertificates.registrationdeadline')}}:</span>
+                                                                            <span> {{$course->professionalcertificates[0]['registrationdeadline']}} </span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    @if(Auth::check())
+                                                                        <button type="button" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                                                            {{trans('account.Enroll Now')}}
+                                                                        </button>
+
+                                                                    @else
+                                                                        <a href="javascript:void(0)" data-dismiss="modal" data-remote="/login" data-toggle="modal" data-target="#loginModal" class="btn btn-primary btn-lg mt-3">
+                                                                            {{trans('account.Enroll Now')}}
+                                                                        </a>
+                                                                    @endif
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endisset
+                                                @else
+                                                    <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
+                                                    <figure class="mbsm">
+                                                        <a href="/instructors/view/{{$course->instructor->slug}}">
+                                                            @if($course->instructor->image)
+                                                                <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
+                                                            @endif
+                                                        </a>
+                                                    </figure>
+                                                    <div class="auther_name mbmd">
+                                                        <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
+                                                        <span class="auther_title">{{$course->instructor->title_lang}}</span>
+                                                    </div>
+                                                    <div>{!!$course->instructor->about_lang!!}</div>
+                                                @endif
                                             @endif
                                         </div>
                                     </div>
@@ -1143,7 +1258,7 @@
                 </script>
 
                 {{--            <script src="https://eu-test.oppwa.com/v1/paymentWidgets.js?checkoutId=CC574C0788637C98138C590EADC478E0.uat01-vm-tx02"></script>--}}
-                <script type='text/javascript'>
+                <script type="text/javascript">
                     const subTotalAmount = parseFloat(24346);
                     const shippingAmount = 0;
                     const taxAmount = 0;
@@ -1151,37 +1266,36 @@
                     const applePayTotalLabel = "";
 
                     function getAmount() {
-                        return ((subTotalAmount + shippingAmount + taxAmount)).toFixed(2);
-                    }
-                    function getLineItems() {
-                        return [{
-                            label: 'Subtotal',
-                            amount: (subTotalAmount).toFixed(2)
-                        }, {
-                            label: 'Shipping',
-                            amount: (shippingAmount).toFixed(2)
-                        }, {
-                            label: 'Tax',
-                            amount: (taxAmount).toFixed(2)
-                        }];
+                        return (subTotalAmount + shippingAmount + taxAmount).toFixed(2);
                     }
 
-                    const wpwlOptions = {
-                        locale: "ar",
-                        applePay: {
-                            displayName: "",
-                            total: {
-                                label: ""
-                            },
-                            paymentTarget:'_top',
-                            merchantCapabilities: ['supports3DS'],
-                            supportedNetworks: ['mada','masterCard', 'visa' ],
-                            supportedCountries: ['SA'],
-                        }
+                    function getLineItems() {
+                        return [
+                            { label: 'Subtotal', amount: subTotalAmount.toFixed(2) },
+                            { label: 'Shipping', amount: shippingAmount.toFixed(2) },
+                            { label: 'Tax', amount: taxAmount.toFixed(2) }
+                        ];
+                    }
+
+                    // ✅ تحقق من وجود wpwlOptions قبل تعريفه
+                    if (typeof wpwlOptions === 'undefined') {
+                        var wpwlOptions = {};
+                    }
+
+                    // ✅ دمج الإعدادات بدل إعادة تعريف المتغير
+                    wpwlOptions.locale = "ar";
+                    wpwlOptions.applePay = {
+                        displayName: "",
+                        total: { label: "" },
+                        paymentTarget: '_top',
+                        merchantCapabilities: ['supports3DS'],
+                        supportedNetworks: ['mada', 'masterCard', 'visa'],
+                        supportedCountries: ['SA']
                     };
-                    wpwlOptions.createCheckout = function() {
-                        return $.post("{{url('payments/verify/hyperpay')}}")
-                            .then(function(response) {
+
+                    wpwlOptions.createCheckout = function () {
+                        return $.post("{{ url('payments/verify/hyperpay') }}")
+                            .then(function (response) {
                                 return response.checkoutId;
                             });
                     };
@@ -1201,6 +1315,170 @@
             </div>
         </div>
     </div>
+    @if($course->type  ==  Courses::TYPE_PROFESSIONAL_CERTIFICATES)
+
+        {{--<div class="modal fade" id="termsModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">--}}
+        <div class="modal fade" id="termsModal" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        {{--                                                                            <h5 class="modal-title fw-bold" id="termsModalLabel">الشروط والأحكام</h5>--}}
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                    </div>
+                    <div class="modal-body">
+                        {{--                                                                            <div class="container mt-4">--}}
+                        {{--                                                                                <div class="card shadow-lg border-0">--}}
+                        {{--                                                                                    <div class="card-body">--}}
+                        <h3 class="text-center fw-bold mb-4">الشروط والأحكام</h3>
+
+                        <h4 class="fw-bold">📌 التسجيل بالبرامج التدريبية</h4>
+                        <ul>
+                            <li>في حالة طلب المتدرب دعم هدف إذا توفرت الشروط لذلك، فلا يجوز لأي شخص الدفع عوضًا عنه، إذ يجب تسجيل بيانات المتدرب الطالب للدعم في الفاتورة.</li>
+                            <li>يتم تقديم البرنامج التدريبي بنمط التدريب الافتراضي المتزامن (أونلاين).</li>
+                            <li>في حال قام المتدرب بالتسجيل على دورة ما ولم يسدد الرسوم حتى تاريخ انتهاء التسجيل، فيقوم النظام بحذف اسمه تلقائيًا من قائمة الملتحقين بالدورة، ويستطيع التسجيل في موعد لاحق.</li>
+                            <li>يتم إعلام المتدرب برسالة على الواتس آب إذا حدث أي تغيير على الموعد.</li>
+                        </ul>
+
+                        <h4 class="fw-bold">📅 الحضور والغياب</h4>
+                        <ul>
+                            <li>يعامل الحضور الإلكتروني معاملة الحضور في قاعات التدريب التقليدية ويطبق على الحضور الإلكتروني اللوائح المنظمة للحضور والحرمان.</li>
+                            <li>يجب ألا تقل نسبة الحضور الإلكتروني في التعلم الإلكتروني عن 70% من مجموع ساعات الدورة التدريبية.</li>
+                            <li>يحرم المتدرب من الحصول على شهادة الحضور إذا تجاوزت نسبة غيابه 30% من المحاضرات التزامنية.</li>
+                        </ul>
+
+                        <h4 class="fw-bold">💰 السداد والأسعار والتخفيضات</h4>
+                        <ul>
+                            <li>يمكن السداد بطرق ثلاثة: الدفع الإلكتروني ببطاقات الائتمان المختلفة، أو بطاقات مدى، أو التحويل البنكي المباشر.</li>
+                            <li>سعر البرنامج هو سعره عند السداد وليس عند التسجيل.</li>
+                            <li>يعرض الموقع دائمًا السعر الحالي للبرنامج، قد يتغير السعر لاحقًا وفقًا لسريان التخفيضات.</li>
+                            <li>إذا كان السداد بإحدى الطرق الإلكترونية يتم تأكيد التسجيل مباشرة ويصبح التسجيل مؤكدًا.</li>
+                            <li>في حال كان التسجيل بالحوالات البنكية، يتحول إلى "انتظار اعتماد الإدارة"، حيث يقوم أحد موظفي خدمة العملاء باعتماد التسجيل بعد التأكد من تلقي المبلغ.</li>
+                        </ul>
+
+                        <h4 class="fw-bold">🔄 الاسترجاع</h4>
+                        <ul>
+                            <li>يحق للمتدرب استرجاع المبلغ المدفوع قبل بدء البرنامج بـ 5 أيام عمل كحد أدنى.</li>
+                            <li>في حال تعذر إقامة البرنامج لأسباب لا تتعلق بالمتدرب، يحق له المطالبة باسترجاع المبلغ.</li>
+                            <li>يمكن للمتدرب تحويل مبلغ البرنامج إلى برنامج آخر إذا طلب التحويل قبل 3 أيام عمل من بدء البرنامج المدفوع.</li>
+                            <li>لا يمكن استرجاع المبلغ أو تحويله إلى برنامج آخر إذا تغيب المتدرب عن الحضور.</li>
+                        </ul>
+
+                        <h4 class="fw-bold">📜 شروط وأحكام عقد البرامج التدريبية</h4>
+                        <ul>
+                            <li>يحق للإدارة تأجيل عقد برنامج تدريبي مدة لا تزيد عن أسبوع، مع إخطار جميع المتدربين بذلك.</li>
+                            <li>يحق للإدارة تأجيل جلسة تدريبية مدة لا تزيد عن يومين، مع إخطار المتدربين.</li>
+                            <li>يمكن للمتدرب معرفة روابط الغرف الافتراضية عبر صفحة البرنامج، والتي تعمل فقط أثناء فترة انعقاد البرامج.</li>
+                            <li>جهة التدريب غير مسؤولة عن تهاون المتدرب في التدريب وعدم التزامه بالاختبارات التجريبية.</li>
+                        </ul>
+                        {{--                                                                                    </div>--}}
+                        {{--                                                                                </div>--}}
+                        {{--                                                                            </div>--}}
+
+
+                        <!-- Checkbox للموافقة -->
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="agreeCheckbox">
+                            <label class="form-check-label fw-bold" for="agreeCheckbox" style="
+    margin-right: 20px;
+    margin-left: 20px;
+">
+                                أوافق على جميع الشروط والأحكام
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- زر التسجيل يكون غير نشط حتى يتم تحديد الـ Checkbox -->
+                        <button type="button" class="btn btn-success" id="confirmRegister" disabled>تأكيد التسجيل</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const modal = document.getElementById('termsModal');
+                const agreeCheckbox = document.getElementById('agreeCheckbox');
+                const confirmButton = document.getElementById('confirmRegister');
+                const closeButtons = document.querySelectorAll('[data-bs-dismiss="modal"]');
+
+                // تفعيل زر التسجيل فقط عند تحديد الـ Checkbox
+                agreeCheckbox.addEventListener('change', function () {
+                    confirmButton.disabled = !this.checked;
+                });
+
+                // ربط زر "تأكيد التسجيل" بتنفيذ إضافة الدورة إلى السلة
+                confirmButton.addEventListener("click", function () {
+                    const courseId = "{{ $course->id }}"; // جلب معرف الدورة من Laravel
+                    const redirectUrl = `/courses/addToCart/id/${courseId}`;
+
+                    window.location.href = redirectUrl; // توجيه المستخدم إلى رابط التسجيل
+                });
+
+                // وظيفة إغلاق المودال بشكل كامل وإزالة `modal-backdrop`
+                function closeModal() {
+                    const backdrop = document.querySelector('.modal-backdrop');
+                    if (backdrop) backdrop.remove();
+                    modal.classList.remove('show');
+                    modal.style.display = "none";  // إخفاء المودال نهائيًا
+                    document.body.classList.remove('modal-open');
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+
+                // ربط الحدث بزر "تأكيد التسجيل"
+                confirmButton.addEventListener('click', function () {
+                    closeModal();
+                    alert("تم التسجيل بنجاح!");
+                });
+
+                // ربط الحدث بجميع أزرار الإغلاق
+                closeButtons.forEach(button => {
+                    button.addEventListener('click', closeModal);
+                });
+
+                // السماح بإغلاق المودال عند الضغط على أي منطقة خارجية
+                window.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+            });
+        </script>
+
+
+
+        <style>
+            div#hubspot-messages-iframe-container {
+                display: none !important;
+            }
+
+            .float {
+                display: none !important;
+            }
+
+            .float-whatsapp {
+                position: fixed;
+                left: 0;
+                margin-left: 24px;
+                width: 60px;
+                height: 60px;
+                bottom: 0;
+                margin-bottom: 16px;
+                background-color: #18B289;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                box-shadow: 2px 2px 3px #999;
+                z-index: 2;
+            }
+        </style>
+
+        {{--        <a href="https://certificate.igtsservice.com/?prevUrl={{ urlencode(url()->full()) }}" target="_blank" class="float-whatsapp">--}}
+        <a href="#" target="_blank" class="float-whatsapp">
+            <i class="fab fa-whatsapp my-float" aria-hidden="true"></i>
+        </a>
+
+    @endif
 
     <script>
         window.openSubscriptionModal = function () {

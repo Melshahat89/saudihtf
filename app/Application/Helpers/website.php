@@ -43,11 +43,11 @@ function getYouTubeId($url){
 }
 
 function menuCategories(){
-    return Categories::where('status',1)->where('futurework',0)->where('show_menu',1)->orderBy('sort','asc')->get();
+    return Categories::where('status',1)->where('show_menu',1)->orderBy('sort','asc')->get();
 }
-function menuFutureWorkCategories(){
-    return Categories::where('status',1)->where('futurework',1)->where('show_menu',1)->orderBy('sort','asc')->get();
-}
+//function menuFutureWorkCategories(){
+//    return Categories::where('status',1)->where('futurework',1)->where('show_menu',1)->orderBy('sort','asc')->get();
+//}
 
 function small($image = ''){
 

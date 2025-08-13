@@ -33,8 +33,13 @@ class Courses extends Model
     const TYPE_BUNDLES = 4;
     //const TYPE_TERM = 5;  
     const TYPE_WEBINAR = 5;
+    const TYPE_PROFESSIONAL_CERTIFICATES = 6;
     const FULL_TIME_ACCESS = 1;
     const NOT_FULL_TIME_ACCESS = 0;
+
+    public function professionalcertificates(){
+        return $this->hasMany(Professionalcertificates::class, "courses_id");
+    }
     public function masterrequest()
     {
         return $this->hasMany(Masterrequest::class, "courses_id");

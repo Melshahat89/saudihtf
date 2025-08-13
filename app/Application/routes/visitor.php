@@ -47,6 +47,7 @@ Route::get('courses/view/{slug}' , [CoursesController::class, 'page']);
 Route::get('courses/courseLecture/id/{id}', [CoursesController::class, 'lecture']);
 Route::get('courses/category/{slug?}', [CoursesController::class, 'category']);
 Route::get('bundles/category/{slug?}', [CoursesController::class, 'bundleCategory']);
+Route::get('professional-certificates/category/{slug?}', [CoursesController::class, 'professionalcertificatesCategory']);
 Route::get('masters/category/{slug?}', [CoursesController::class, 'mastersCategory']);
 Route::get('diplomas/category/{slug?}', [CoursesController::class, 'diplomasCategory']);
 Route::get('allcourses/category/{slug?}', [CoursesController::class, 'allCourses']);
@@ -180,3 +181,4 @@ Route::get('addDataInstructor', 'HomeController@addDataInstructor');
 
 Route::get('subscripe', 'HomeController@landingPage');
 Route::post('newsletter/item' , 'NewsletterController@store');
+Route::get('professional-certificates' , 'HomeController@professionalcertificateshome');

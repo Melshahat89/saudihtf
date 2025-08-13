@@ -130,6 +130,20 @@ class HomeController extends Controller
         $this->data['subscription_yearly_before'] = round(($homeSettings->MonthlyB2cSubscriptionPrice * 12));
         return view('website.home', $this->data);
     }
+    public function professionalcertificateshome()
+    {
+
+        $this->data['featuredCourses'] = Courses::where('published', 1)->where('type', Courses::TYPE_PROFESSIONAL_CERTIFICATES)
+            ->skip(0)->take(16)->orderBy('sort', 'asc')->get(); //Best Learning
+        $this->data['sliders'] = Slider::where('status', 1)->get();
+        $this->data['categories'] = $categories = Categories::where('show_menu', 1)->get();
+        $homeCategories = Categories::where('show_home', 1)->orderBy('sort', 'ASC')->get();
+        foreach($homeCategories as $category){
+            $this->data['coursesPerCategory'][$category->name_en] = Courses::where('published', 1)->where('categories_id', $category->id)->where('type', '!=', Courses::TYPE_WEBINAR)->where('type', '!=', Courses::TYPE_BUNDLES)->skip(0)->take(5)->get();
+        }
+        $exchangeRate = Payments::exchangeRate();
+        return view('website.professionalcertificates', $this->data);
+    }
 
     public function businessCourses()
     {
