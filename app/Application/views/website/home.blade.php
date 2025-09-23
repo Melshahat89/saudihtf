@@ -332,10 +332,10 @@
         @endif
 
 
-        {{--            <a class="font-bold items-baseline ltr:pt-[4px] rtl:pt-[8px] hover:text-white w-[45px] h-[45px] transition ease-in-out hover:bg-green flex justify-center border rounded-full border-green text-green"--}}
-        {{--                href="{{ LaravelLocalization::getLocalizedURL(config('app.locale') == 'en' ? 'ar' : 'en') }}">--}}
-        {{--                {{ trans('website.other lang') }}--}}
-        {{--            </a>--}}
+                    <a class="font-bold items-baseline ltr:pt-[4px] rtl:pt-[8px] hover:text-white w-[45px] h-[45px] transition ease-in-out hover:bg-green flex justify-center border rounded-full border-green text-green"
+                        href="{{ LaravelLocalization::getLocalizedURL(config('app.locale') == 'en' ? 'ar' : 'en') }}">
+                        {{ trans('website.other lang') }}
+                    </a>
     </div>
 
     <!-- Mobile Menu -->
