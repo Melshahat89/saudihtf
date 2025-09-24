@@ -1000,7 +1000,7 @@
 
 <!-- Instructors Section -->
     @if ($Partners && count($Partners) > 0)
-        <section class="instructors-section  bg-coolgrey md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]">
+        <section class="instructors-section   md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]">
             <div class="flex flex-col items-center justify-center text-center">
                 <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
                     {{ trans('website.Partners') }}
