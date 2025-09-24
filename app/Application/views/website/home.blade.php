@@ -644,59 +644,6 @@
     </div>
 </section>
 
-
-<!-- Specialities Section -->
-<section
-        class="specialities-section relative mt-[50px] md:px-[90px] px-[30px] md:py-[60px] py-[30px] bg-coolgrey reverse-cols-md grid md:grid-cols-2 grid-cols-1 items-center">
-    <div class="Specialities-slider mt-[30px] ltr:pr-0 rtl:pl-0 md:ltr:pr-[50px] md:rtl:pl-[50px]">
-        <div class="swiper md:h-[600px] h-[400px]">
-            <div class="swiper-wrapper">
-
-
-
-                @foreach ($homeCategories as $cats)
-                    {{-- @if (!$cats->childs->isEmpty()) --}}
-                    <div class="swiper-slide">
-                        <div class="relative">
-                            <a href="/allcourses/category/{{ $cats->slug }}">
-                                <img src="{{ large1($cats->image) }}"
-                                     alt="{{ $cats->name_lang }}" class="object-cover w-full h-full rounded-lg" />
-                                <div class="absolute inset-0 bg-black rounded-lg opacity-50"></div>
-                                <h2
-                                        class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]">
-                                    {{ $cats->name_lang }}
-                                </h2>
-                            </a>
-                        </div>
-                    </div>
-                    {{-- @endif --}}
-                @endforeach
-
-            </div>
-            <div class="block swiper-pagination md:hidden"></div>
-        </div>
-        <div class="items-center justify-center hidden gap-4 rotate-90 md:flex Specialities-slider__buttons">
-            <div class="button-prev">
-                <img src="{{ asset('subscription-new/src') }}/images/arrow-left.svg" alt="arrow-left" />
-            </div>
-            <div class="button-next">
-                <img src="{{ asset('subscription-new/src') }}/images/arrow-right.svg" alt="arrow-right" />
-            </div>
-        </div>
-    </div>
-    <div class="md:ltr:pl-[100px] ltr:pl-0 md:rtl:pr-[100px] rtl:pr-0 order-first md:order-last">
-        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
-            <h2 class="text-black md:text-[40px] text-[25px]">{{ trans('website.Specialities') }}</h2>
-            {{-- <p class="text-babydark md:text-[32px] text-[18px]"> --}}
-            {{-- {{trans('website.Specialities p')}} --}}
-            {{-- </p> --}}
-        </div>
-        <p class="text-babydark md:text-[18px] text-[18px] mt-[30px]">
-            {{ trans('website.Specialities description') }}
-        </p>
-    </div>
-</section>
-
 <!-- Top Courses Section -->
 <section class="top-courses-section bg-white mt-[50px] md:mt-[100px] px-[30px] md:px-[90px] pt-0 py-[60px]">
     <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
@@ -773,6 +720,60 @@
         </div>
     </div>
 </section>
+
+<!-- Specialities Section -->
+<section
+        class="specialities-section relative mt-[50px] md:px-[90px] px-[30px] md:py-[60px] py-[30px] bg-coolgrey reverse-cols-md grid md:grid-cols-2 grid-cols-1 items-center">
+    <div class="Specialities-slider mt-[30px] ltr:pr-0 rtl:pl-0 md:ltr:pr-[50px] md:rtl:pl-[50px]">
+        <div class="swiper md:h-[600px] h-[400px]">
+            <div class="swiper-wrapper">
+
+
+
+                @foreach ($homeCategories as $cats)
+                    {{-- @if (!$cats->childs->isEmpty()) --}}
+                    <div class="swiper-slide">
+                        <div class="relative">
+                            <a href="/allcourses/category/{{ $cats->slug }}">
+                                <img src="{{ large1($cats->image) }}"
+                                     alt="{{ $cats->name_lang }}" class="object-cover w-full h-full rounded-lg" />
+                                <div class="absolute inset-0 bg-black rounded-lg opacity-50"></div>
+                                <h2
+                                        class="absolute w-full md:text-lg text-[12px] font-bold text-center text-white bottom-4 px-[10px]">
+                                    {{ $cats->name_lang }}
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+                    {{-- @endif --}}
+                @endforeach
+
+            </div>
+            <div class="block swiper-pagination md:hidden"></div>
+        </div>
+        <div class="items-center justify-center hidden gap-4 rotate-90 md:flex Specialities-slider__buttons">
+            <div class="button-prev">
+                <img src="{{ asset('subscription-new/src') }}/images/arrow-left.svg" alt="arrow-left" />
+            </div>
+            <div class="button-next">
+                <img src="{{ asset('subscription-new/src') }}/images/arrow-right.svg" alt="arrow-right" />
+            </div>
+        </div>
+    </div>
+    <div class="md:ltr:pl-[100px] ltr:pl-0 md:rtl:pr-[100px] rtl:pr-0 order-first md:order-last">
+        <div class="border-decoration ltr:pl-[22px] rtl:pr-[22px] relative">
+            <h2 class="text-black md:text-[40px] text-[25px]">{{ trans('website.Specialities') }}</h2>
+            {{-- <p class="text-babydark md:text-[32px] text-[18px]"> --}}
+            {{-- {{trans('website.Specialities p')}} --}}
+            {{-- </p> --}}
+        </div>
+        <p class="text-babydark md:text-[18px] text-[18px] mt-[30px]">
+            {{ trans('website.Specialities description') }}
+        </p>
+    </div>
+</section>
+
+
 
 <!-- Our Plans Section -->
 
@@ -862,6 +863,65 @@
 {{--</section>--}}
 {{--    @endif--}}
 
+
+<!-- Featured Courses Section -->
+<section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] bg-white">
+    <div class="flex flex-col items-center justify-center text-center">
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+            {{ trans('website.Last Courses') }}
+        </h3>
+        <p class="text-babydark text-[18px] mt-[16px]">
+            {{ trans('website.Featured Courses H1') }}
+        </p>
+    </div>
+    <div class="mt-[64px] featured-courses-list">
+
+
+        @foreach ($Last4 as $last)
+            <a href="{{ url('courses/view/' . $last->slug) }}" class="block group">
+                <div
+                        class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]">
+                    <img class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                         src="{{ large1($last->image) }}" alt="hero-image" />
+                    <div class="w-full mx-[20px]">
+                        <h3 class="text-green group-hover:text-white text-[24px] font-bold">
+                            {{ mb_substr(strip_tags($last['title_lang']), 0, 200) }}
+                        </h3>
+                        <p class="text-babydark group-hover:text-white mt-[10px] h-[63px] !overflow-hidden text-[14px]">
+                            {{--                            {{ mb_substr(strip_tags($last['description_lang']), 0, 400) }}--}}
+                            {{ \Illuminate\Support\Str::words(strip_tags($last['description_lang']), 40, '...') }}
+
+                        </p>
+                        <div class="inline-flex items-center  mt-[10px] justify-cente gap-2">
+                                <span class="text-green group-hover:text-white text-[14px]">
+                                    +{{ $last->visits >= 1000 && $last->visits < 1000000 ? number_format($last->visits / 1000, 0) . 'K' : ($last->visits >= 1000000 ? number_format($last->visits / 1000000, 0) . 'M' : $last->visits) }}
+                                </span>
+                            <span
+                                    class="text-[14px] group-hover:text-white text-green">{{ trans('website.Views') }}</span>
+                        </div>
+                    </div>
+                    <svg id="linkArrow" class="hidden md:flex" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                         version="1.1" viewBox="0 0 52 52">
+                        <path
+                                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z" />
+                    </svg>
+                </div>
+            </a>
+        @endforeach
+
+
+
+        <div class="flex justify-center">
+            <a href="{{ url('allcourses/category') }}"
+               class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-blue hover:bg-green w-[265px] h-[55px] flex items-center justify-center rounded-full">
+                {{ trans('website.View All Courses') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
 <!-- Top Courses Section -->
 @isset($forYou)
     @if (count($forYou) > 0)
@@ -939,62 +999,6 @@
         </section>
     @endif
 @endif
-
-<!-- Featured Courses Section -->
-<section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] bg-white">
-    <div class="flex flex-col items-center justify-center text-center">
-        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
-            {{ trans('website.Last Courses') }}
-        </h3>
-        <p class="text-babydark text-[18px] mt-[16px]">
-            {{ trans('website.Featured Courses H1') }}
-        </p>
-    </div>
-    <div class="mt-[64px] featured-courses-list">
-
-
-        @foreach ($Last4 as $last)
-            <a href="{{ url('courses/view/' . $last->slug) }}" class="block group">
-                <div
-                        class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]">
-                    <img class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
-                         src="{{ large1($last->image) }}" alt="hero-image" />
-                    <div class="w-full mx-[20px]">
-                        <h3 class="text-green group-hover:text-white text-[24px] font-bold">
-                            {{ mb_substr(strip_tags($last['title_lang']), 0, 200) }}
-                        </h3>
-                        <p class="text-babydark group-hover:text-white mt-[10px] h-[63px] !overflow-hidden text-[14px]">
-{{--                            {{ mb_substr(strip_tags($last['description_lang']), 0, 400) }}--}}
-                            {{ \Illuminate\Support\Str::words(strip_tags($last['description_lang']), 40, '...') }}
-
-                        </p>
-                        <div class="inline-flex items-center  mt-[10px] justify-cente gap-2">
-                                <span class="text-green group-hover:text-white text-[14px]">
-                                    +{{ $last->visits >= 1000 && $last->visits < 1000000 ? number_format($last->visits / 1000, 0) . 'K' : ($last->visits >= 1000000 ? number_format($last->visits / 1000000, 0) . 'M' : $last->visits) }}
-                                </span>
-                            <span
-                                    class="text-[14px] group-hover:text-white text-green">{{ trans('website.Views') }}</span>
-                        </div>
-                    </div>
-                    <svg id="linkArrow" class="hidden md:flex" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                         version="1.1" viewBox="0 0 52 52">
-                        <path
-                                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z" />
-                    </svg>
-                </div>
-            </a>
-        @endforeach
-
-
-
-        <div class="flex justify-center">
-            <a href="{{ url('allcourses/category') }}"
-               class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-blue hover:bg-green w-[265px] h-[55px] flex items-center justify-center rounded-full">
-                {{ trans('website.View All Courses') }}
-            </a>
-        </div>
-    </div>
-</section>
 
 
 
