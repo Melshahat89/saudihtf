@@ -1012,13 +1012,13 @@
                 <div class="swiper md:h-[450px] h-[400px]">
                     <div class="swiper-wrapper md:pb-0 pb-[120px]">
 
-{{--                        @foreach ($Partners as $instructor)--}}
-{{--                            <div class="swiper-slide">--}}
-{{--                                <a href="/instructors/view/{{ $instructor->slug }}">--}}
-{{--                                    <div class="flex flex-col w-full h-[300px]">--}}
-{{--                                        <img src="{{ large1($instructor->logo) }}"--}}
-{{--                                            alt="{{ $instructor->title_lang }}" style="max-height:300px;    object-fit: contain;"--}}
-{{--                                            class="object-cover w-full h-full rounded-[10px]" />--}}
+                        @foreach ($Partners as $instructor)
+                            <div class="swiper-slide">
+                                <a href="/instructors/view/{{ $instructor->slug }}">
+                                    <div class="flex flex-col w-full h-[300px]">
+                                        <img src="{{ large1($instructor->logo) }}"
+                                            alt="{{ $instructor->title_lang }}" style="max-height:300px;    object-fit: contain;"
+                                            class="object-cover w-full h-full rounded-[10px]" />
 {{--                                        <h3 class="text-black text-[20px] lg:text-[25px] font-bold mt-[15px]"--}}
 {{--                                            style="min-height: 15%">--}}
 {{--                                            {{ $instructor->title_lang }}--}}
@@ -1027,72 +1027,10 @@
 {{--                                            {{ strlen(strip_tags($instructor['title_lang'])) > 70 ? mb_substr(strip_tags($instructor['title_lang']), 0, 70) . '...' : strip_tags($instructor['title_lang']) }}--}}
 
 {{--                                        </p>--}}
-{{--                                    </div>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                        @endforeach--}}
-
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/1.png') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/2.png') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/3.jpeg') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/4.jpeg') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/5.jpeg') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/6.png') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="flex flex-col w-full h-[300px]">
-                                    <img src="{{ asset('subscription-new/partenrs/7.jpeg') }}"
-                                         alt="" style="max-height:300px;    object-fit: contain;"
-                                         class="object-cover w-full h-full rounded-[10px]" />
-
-                                </div>
-                            </div>
-
-
-
+                        @endforeach
 
                     </div>
                     <div class="swiper-pagination !bottom-0"></div>
