@@ -197,7 +197,7 @@
         @include(layoutContent('website'))
 
 
-        <a href="https://wa.me/#" target="_blank" class="float">
+        <a href="https://wa.me/+966590784935" target="_blank" class="float">
             <i class="fab fa-whatsapp my-float" aria-hidden="true"></i>
         </a>
 

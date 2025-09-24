@@ -72,9 +72,9 @@
 {{--                                <a class="nav-link button home-slider-button button_small text_capitalize slider-cta" href="{{url('/subscriptions')}}">{{trans('b2b.subscriptions')}} <span class="sr-only"></span></a>--}}
 {{--                            </li>--}}
 
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">{{ trans('home.Professional Certificates') }}</a>
-                            </li>
+{{--                            <li class="nav-item active">--}}
+{{--                                <a class="nav-link" href="#">{{ trans('home.Professional Certificates') }}</a>--}}
+{{--                            </li>--}}
 
                         </ul>
                     </div>

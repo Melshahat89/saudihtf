@@ -165,10 +165,10 @@
                 </details>
             </li>
 
-            <li>
-                <a href="#"
-                   class="text-black transition ease-in-out hover:text-green">{{ trans('home.Professional Certificates') }}</a>
-            </li>
+{{--            <li>--}}
+{{--                <a href="#"--}}
+{{--                   class="text-black transition ease-in-out hover:text-green">{{ trans('home.Professional Certificates') }}</a>--}}
+{{--            </li>--}}
         </ul>
 
         <form class="pl-2 pr-2 !m-0 !space-x-0 search-bar desktop-search" action="/allcourses/category"
@@ -425,9 +425,9 @@
                     </details>
                 </li>
 
-                <li class="text-white text-[25px] font-light">
-                    <a href="#">{{ trans('home.Professional Certificates') }}</a>
-                </li>
+{{--                <li class="text-white text-[25px] font-light">--}}
+{{--                    <a href="#">{{ trans('home.Professional Certificates') }}</a>--}}
+{{--                </li>--}}
 
             </ul>
 
@@ -777,146 +777,90 @@
 <!-- Our Plans Section -->
 
 {{--    @if(!isset(Auth::user()->subscription))--}}
-<section id="our-plans-section"
-         class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] py-[80px] bg-coolgrey flex flex-col md:flex-row items-center">
-    <div
-            class="md:w-[30%] w-full md:items-start items-center flex flex-col text-center md:rtl:text-right md:ltr:text-left">
-        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
-            {{ trans('website.Our Plans') }}
-        </h3>
-        {{-- <p class="text-babydark text-[20px] lg:text-[32px] mt-[10px]"> --}}
-        {{-- {{trans('website.Our Plans P')}} --}}
-        {{-- </p> --}}
-        <p class="text-babydark text-[18px] mt-[30px]">
-            {{ trans('website.Our Plans Description') }}
+{{--<section id="our-plans-section"--}}
+{{--         class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] py-[80px] bg-coolgrey flex flex-col md:flex-row items-center">--}}
+{{--    <div--}}
+{{--            class="md:w-[30%] w-full md:items-start items-center flex flex-col text-center md:rtl:text-right md:ltr:text-left">--}}
+{{--        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">--}}
+{{--            {{ trans('website.Our Plans') }}--}}
+{{--        </h3>--}}
+{{--        --}}{{-- <p class="text-babydark text-[20px] lg:text-[32px] mt-[10px]"> --}}
+{{--        --}}{{-- {{trans('website.Our Plans P')}} --}}
+{{--        --}}{{-- </p> --}}
+{{--        <p class="text-babydark text-[18px] mt-[30px]">--}}
+{{--            {{ trans('website.Our Plans Description') }}--}}
 
-        </p>
-        <p class="text-babydark text-[18px] mt-[30px]">
+{{--        </p>--}}
+{{--        <p class="text-babydark text-[18px] mt-[30px]">--}}
 
-            {{ trans('website.Our Plans Description2') }}
+{{--            {{ trans('website.Our Plans Description2') }}--}}
 
-        </p>
-        {{-- <a href="#" onclick="annualModal.showModal()"
-            class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full">
-            --}}
-        {{-- Signup To Subscribe --}}
-        {{-- </a> --}}
-    </div>
-    <div class="flex flex-col md:flex-row items-center justify-center md:w-[50%] w-full md:mt-0 mt-[50px]">
-        <div id="{{ Auth::check() ? 'annualSubBtn' : 'annualSubBtnOff' }}" class="annualSubBtn text-center cursor-pointer flex flex-col justify-between h-[500px] lg:h-[650px] min-w-[250px] lg:min-w-[300px] xl:min-w-[550px] p-[32px] gradient-blue rounded-[20px]"
-              data-annualFees="{{ $subscription_yearly_after }}"
-             onclick="{{ Auth::check() ? 'subscriptionModal.showModal()' : 'signinModal.showModal()' }}">
-            <h4 class="text-white pb-[32px] text-[40px] font-bold border-b border-white uppercase annualSubBtn">
-                {{ trans('b2b.ANNUAL') }}
-            </h4>
-            <div class="text-white annualSubBtn">
-                <h2 class="annualSubBtn text-[80px] lg:text-[120px] font-bold leading-[1]">
-                    {{ $subscription_yearly_after }}
-                </h2>
-                <h3 class="annualSubBtn text-[24px] lg:text-[32px] uppercase">
-                    {{ getCurrency() }}/{{ trans('website.Year') }}
-                </h3>
-                <div class="annualSubBtn mt-[10px] flex items-center justify-center gap-4">
-                    <p class="text-[32px] lg:text-[48px] font-bold line-through text-white/45">
-                        {{ $subscription_yearly_before }}
-                    </p>
-                    <span class="annualSubBtn text-[20px] lg:text-[24px] text-white/45 uppercase">{{ getCurrency() }}/{{ trans('website.Year') }}</span>
-                </div>
-            </div>
-            <div  class="annualSubBtn text-white flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-white uppercase w-full">
-                {{ trans('website.Recommended') }}
-            </div>
+{{--        </p>--}}
+{{--        --}}{{-- <a href="#" onclick="annualModal.showModal()"--}}
+{{--            class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full">--}}
+{{--            --}}
+{{--        --}}{{-- Signup To Subscribe --}}
+{{--        --}}{{-- </a> --}}
+{{--    </div>--}}
+{{--    <div class="flex flex-col md:flex-row items-center justify-center md:w-[50%] w-full md:mt-0 mt-[50px]">--}}
+{{--        <div id="{{ Auth::check() ? 'annualSubBtn' : 'annualSubBtnOff' }}" class="annualSubBtn text-center cursor-pointer flex flex-col justify-between h-[500px] lg:h-[650px] min-w-[250px] lg:min-w-[300px] xl:min-w-[550px] p-[32px] gradient-blue rounded-[20px]"--}}
+{{--              data-annualFees="{{ $subscription_yearly_after }}"--}}
+{{--             onclick="{{ Auth::check() ? 'subscriptionModal.showModal()' : 'signinModal.showModal()' }}">--}}
+{{--            <h4 class="text-white pb-[32px] text-[40px] font-bold border-b border-white uppercase annualSubBtn">--}}
+{{--                {{ trans('b2b.ANNUAL') }}--}}
+{{--            </h4>--}}
+{{--            <div class="text-white annualSubBtn">--}}
+{{--                <h2 class="annualSubBtn text-[80px] lg:text-[120px] font-bold leading-[1]">--}}
+{{--                    {{ $subscription_yearly_after }}--}}
+{{--                </h2>--}}
+{{--                <h3 class="annualSubBtn text-[24px] lg:text-[32px] uppercase">--}}
+{{--                    {{ getCurrency() }}/{{ trans('website.Year') }}--}}
+{{--                </h3>--}}
+{{--                <div class="annualSubBtn mt-[10px] flex items-center justify-center gap-4">--}}
+{{--                    <p class="text-[32px] lg:text-[48px] font-bold line-through text-white/45">--}}
+{{--                        {{ $subscription_yearly_before }}--}}
+{{--                    </p>--}}
+{{--                    <span class="annualSubBtn text-[20px] lg:text-[24px] text-white/45 uppercase">{{ getCurrency() }}/{{ trans('website.Year') }}</span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div  class="annualSubBtn text-white flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-white uppercase w-full">--}}
+{{--                {{ trans('website.Recommended') }}--}}
+{{--            </div>--}}
 
-            <div class="flex items-center justify-center text-white annualSubBtn">
-                <a  class="annualSubBtn tems-center font-bold text-white text-[24px] md:text-[24px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full">
+{{--            <div class="flex items-center justify-center text-white annualSubBtn">--}}
+{{--                <a  class="annualSubBtn tems-center font-bold text-white text-[24px] md:text-[24px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full">--}}
 
-                    اشترك الآن
-                </a>
-            </div>
-        </div>
-        <div id="{{ Auth::check() ? 'monthlySubBtn' : 'monthlySubBtnOff' }}" data-monthlyFees="{{ $subscription_monthly }}"
-             class="monthlySubBtn text-center cursor-pointer flex flex-col justify-between h-[420px] lg:h-[483px] min-w-[250px] lg:min-w-[300px] xl:min-w-[550px] p-[32px] bg-white md:ltr:rounded-br-[20px] md:ltr:rounded-tr-[20px] md:ltr:rounded-bl-0 md:ltr:rounded-tl-0 md:rtl:rounded-bl-[20px] md:rtl:rounded-tl-[20px] md:rtl:rounded-br-0 md:rtl:rounded-tr-0 ltr:rounded-br-[20px] ltr:rounded-bl-[20px] ltr:rounded-tr-0 ltr:rounded-tl-0 rtl:rounded-br-[20px] rtl:rounded-bl-[20px] rtl:rounded-tr-0 rtl:rounded-tl-0"
-             onclick=" {{ Auth::check() ? 'subscriptionModal.showModal()' : 'signinModal.showModal()' }}">
+{{--                    اشترك الآن--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div id="{{ Auth::check() ? 'monthlySubBtn' : 'monthlySubBtnOff' }}" data-monthlyFees="{{ $subscription_monthly }}"--}}
+{{--             class="monthlySubBtn text-center cursor-pointer flex flex-col justify-between h-[420px] lg:h-[483px] min-w-[250px] lg:min-w-[300px] xl:min-w-[550px] p-[32px] bg-white md:ltr:rounded-br-[20px] md:ltr:rounded-tr-[20px] md:ltr:rounded-bl-0 md:ltr:rounded-tl-0 md:rtl:rounded-bl-[20px] md:rtl:rounded-tl-[20px] md:rtl:rounded-br-0 md:rtl:rounded-tr-0 ltr:rounded-br-[20px] ltr:rounded-bl-[20px] ltr:rounded-tr-0 ltr:rounded-tl-0 rtl:rounded-br-[20px] rtl:rounded-bl-[20px] rtl:rounded-tr-0 rtl:rounded-tl-0"--}}
+{{--             onclick=" {{ Auth::check() ? 'subscriptionModal.showModal()' : 'signinModal.showModal()' }}">--}}
 
-            <h4 class="monthlySubBtn text-green pb-[32px] text-[40px] font-bold border-b border-green uppercase">
-                {{ trans('b2b.MONTHLY') }}
-            </h4>
-            <div class="text-green monthlySubBtn">
-                <h2 class="monthlySubBtn text-[80px] lg:text-[120px] font-bold leading-[1]">
-                    {{ $subscription_monthly }}
-                </h2>
-                <h3 class="monthlySubBtn text-[24px] lg:text-[32px] monthlySubBtn uppercase">
-                    {{ getCurrency() }}/{{ trans('website.Mo') }}
-                </h3>
-            </div>
-            <div class="monthlySubBtn text-babydark flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-green uppercase w-full">
-                {{ trans('website.Billed Monthly') }}
-            </div>
-            <div class="flex items-center justify-center text-white monthlySubBtn">
-                <a class="monthlySubBtn tems-center justify-center font-bold text-white text-[24px] md:text-[24px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center rounded-full">
-                    {{ trans('b2b.Subscribe Now') }}
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+{{--            <h4 class="monthlySubBtn text-green pb-[32px] text-[40px] font-bold border-b border-green uppercase">--}}
+{{--                {{ trans('b2b.MONTHLY') }}--}}
+{{--            </h4>--}}
+{{--            <div class="text-green monthlySubBtn">--}}
+{{--                <h2 class="monthlySubBtn text-[80px] lg:text-[120px] font-bold leading-[1]">--}}
+{{--                    {{ $subscription_monthly }}--}}
+{{--                </h2>--}}
+{{--                <h3 class="monthlySubBtn text-[24px] lg:text-[32px] monthlySubBtn uppercase">--}}
+{{--                    {{ getCurrency() }}/{{ trans('website.Mo') }}--}}
+{{--                </h3>--}}
+{{--            </div>--}}
+{{--            <div class="monthlySubBtn text-babydark flex items-center justify-center pt-[32px] text-[28px] font-light border-t border-green uppercase w-full">--}}
+{{--                {{ trans('website.Billed Monthly') }}--}}
+{{--            </div>--}}
+{{--            <div class="flex items-center justify-center text-white monthlySubBtn">--}}
+{{--                <a class="monthlySubBtn tems-center justify-center font-bold text-white text-[24px] md:text-[24px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center rounded-full">--}}
+{{--                    {{ trans('b2b.Subscribe Now') }}--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 {{--    @endif--}}
-
-<!-- Featured Courses Section -->
-<section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] bg-white">
-    <div class="flex flex-col items-center justify-center text-center">
-        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
-            {{ trans('website.Last Courses') }}
-        </h3>
-        <p class="text-babydark text-[18px] mt-[16px]">
-            {{ trans('website.Featured Courses H1') }}
-        </p>
-    </div>
-    <div class="mt-[64px] featured-courses-list">
-
-
-        @foreach ($Last4 as $last)
-            <a href="{{ url('courses/view/' . $last->slug) }}" class="block group">
-                <div
-                        class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]">
-                    <img class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
-                         src="{{ large1($last->image) }}" alt="hero-image" />
-                    <div class="w-full mx-[20px]">
-                        <h3 class="text-green group-hover:text-white text-[24px] font-bold">
-                            {{ mb_substr(strip_tags($last['title_lang']), 0, 200) }}
-                        </h3>
-                        <p class="text-babydark group-hover:text-white mt-[10px] h-[63px] !overflow-hidden text-[14px]">
-{{--                            {{ mb_substr(strip_tags($last['description_lang']), 0, 400) }}--}}
-                            {{ \Illuminate\Support\Str::words(strip_tags($last['description_lang']), 40, '...') }}
-
-                        </p>
-                        <div class="inline-flex items-center  mt-[10px] justify-cente gap-2">
-                                <span class="text-green group-hover:text-white text-[14px]">
-                                    +{{ $last->visits >= 1000 && $last->visits < 1000000 ? number_format($last->visits / 1000, 0) . 'K' : ($last->visits >= 1000000 ? number_format($last->visits / 1000000, 0) . 'M' : $last->visits) }}
-                                </span>
-                            <span
-                                    class="text-[14px] group-hover:text-white text-green">{{ trans('website.Views') }}</span>
-                        </div>
-                    </div>
-                    <svg id="linkArrow" class="hidden md:flex" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                         version="1.1" viewBox="0 0 52 52">
-                        <path
-                                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z" />
-                    </svg>
-                </div>
-            </a>
-        @endforeach
-
-
-
-        <div class="flex justify-center">
-            <a href="{{ url('allcourses/category') }}"
-               class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-blue hover:bg-green w-[265px] h-[55px] flex items-center justify-center rounded-full">
-                {{ trans('website.View All Courses') }}
-            </a>
-        </div>
-    </div>
-</section>
 
 <!-- Top Courses Section -->
 @isset($forYou)
@@ -996,9 +940,67 @@
     @endif
 @endif
 
+<!-- Featured Courses Section -->
+<section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] bg-white">
+    <div class="flex flex-col items-center justify-center text-center">
+        <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
+            {{ trans('website.Last Courses') }}
+        </h3>
+        <p class="text-babydark text-[18px] mt-[16px]">
+            {{ trans('website.Featured Courses H1') }}
+        </p>
+    </div>
+    <div class="mt-[64px] featured-courses-list">
+
+
+        @foreach ($Last4 as $last)
+            <a href="{{ url('courses/view/' . $last->slug) }}" class="block group">
+                <div
+                        class="feat-card flex transition ease-in-out group-hover:bg-green md:flex-row border-coolgrey border-solid border-b flex-col items-center justify-between gap-[20px] w-full group-hover:rounded-[10px] p-[14px]">
+                    <img class="rounded-[10px] md:w-[200px] md:h-[200px] w-full h-full object-cover"
+                         src="{{ large1($last->image) }}" alt="hero-image" />
+                    <div class="w-full mx-[20px]">
+                        <h3 class="text-green group-hover:text-white text-[24px] font-bold">
+                            {{ mb_substr(strip_tags($last['title_lang']), 0, 200) }}
+                        </h3>
+                        <p class="text-babydark group-hover:text-white mt-[10px] h-[63px] !overflow-hidden text-[14px]">
+{{--                            {{ mb_substr(strip_tags($last['description_lang']), 0, 400) }}--}}
+                            {{ \Illuminate\Support\Str::words(strip_tags($last['description_lang']), 40, '...') }}
+
+                        </p>
+                        <div class="inline-flex items-center  mt-[10px] justify-cente gap-2">
+                                <span class="text-green group-hover:text-white text-[14px]">
+                                    +{{ $last->visits >= 1000 && $last->visits < 1000000 ? number_format($last->visits / 1000, 0) . 'K' : ($last->visits >= 1000000 ? number_format($last->visits / 1000000, 0) . 'M' : $last->visits) }}
+                                </span>
+                            <span
+                                    class="text-[14px] group-hover:text-white text-green">{{ trans('website.Views') }}</span>
+                        </div>
+                    </div>
+                    <svg id="linkArrow" class="hidden md:flex" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                         version="1.1" viewBox="0 0 52 52">
+                        <path
+                                d="M42,0H10C4.5,0,0,4.5,0,10v32c0,5.5,4.5,10,10,10h32c5.5,0,10-4.5,10-10V10c0-5.5-4.5-10-10-10ZM35.8,33.7c0,1.1-.9,2-2,2s-2-.9-2-2v-10.9l-12.3,12.3c-.8.8-2,.8-2.8,0s-.8-2,0-2.8l12.3-12.3h-10.9c-1.1,0-2-.9-2-2s.9-2,2-2h15.7s0,0,0,0c.2,0,.5,0,.7.1h0c.2,0,.5.2.7.4.2.2.3.4.4.6h0c0,.2.2.5.2.8v15.7Z" />
+                    </svg>
+                </div>
+            </a>
+        @endforeach
+
+
+
+        <div class="flex justify-center">
+            <a href="{{ url('allcourses/category') }}"
+               class="text-white pb-[3px] mt-[50px] transition ease-in-out bg-blue hover:bg-green w-[265px] h-[55px] flex items-center justify-center rounded-full">
+                {{ trans('website.View All Courses') }}
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
 <!-- Instructors Section -->
     @if ($Partners && count($Partners) > 0)
-        <section class="instructors-section bg-white md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]">
+        <section class="instructors-section  bg-coolgrey md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] pb-[50px]">
             <div class="flex flex-col items-center justify-center text-center">
                 <h3 class="text-black text-[25px] lg:text-[40px] font-bold">
                     {{ trans('website.Partners') }}
@@ -1039,6 +1041,7 @@
         </section>
 
     @endif
+
 <!-- Newsletter Section -->
 <section class="md:mt-[100px] mt-[50px] md:px-[90px] px-[30px] text-center h-[380px]">
     <div class="bg-blue rounded-[28px] h-full w-full flex items-center justify-center">
@@ -1062,7 +1065,7 @@
 </section>
 
 
-<a href="https://wa.me/#" style="    position: fixed;
+<a href="https://wa.me/+966590784935" style="    position: fixed;
     left: 0;
     margin-left: 24px;
     width: 60px;
