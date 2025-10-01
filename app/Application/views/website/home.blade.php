@@ -1167,11 +1167,12 @@
            {{trans('home.Copyright © 2025 Health Tourism Future.')}}
             <br>
 
-           {{trans('home.Powered by IGTS')}}
+{{--           {{trans('home.Powered by IGTS')}}--}}
 {{--            <img src="https://igtsservice.com/website/images/logonew.webp" alt="igts"--}}
 {{--                 class="w-6 h-6"  style="width: 50px; height: 30px; display: inline;" />--}}
 
 {{--            IGTS--}}
+            Powered by IGTS
             </p>
 
             <!-- Payment Methods -->

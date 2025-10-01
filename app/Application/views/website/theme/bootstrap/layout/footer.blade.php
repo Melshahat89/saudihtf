@@ -164,11 +164,11 @@
                 حقوق الطبع والنشر © 2025 Health Tourism Future.
                 <br>
 
-                مطور محتوى
+                Powered by IGTS
 
 {{--                iGTS--}}
-                <img src="https://igtsservice.com/website/images/logonew.webp" alt="Instagram"
-                     class="w-6 h-6"  style="width: 50px; height: 30px;" />
+{{--                <img src="https://igtsservice.com/website/images/logonew.webp" alt="Instagram"--}}
+{{--                     class="w-6 h-6"  style="width: 50px; height: 30px;" />--}}
 
             </p>
 
