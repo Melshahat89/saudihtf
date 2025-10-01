@@ -41,7 +41,7 @@
 {{--                                    @endforeach--}}
 {{--                                </ul>--}}
 {{--                            </li>--}}
-                            <li><a class="nav-link dropdown-toggle">                                    تخصصات عامة
+                            <li><a class="nav-link dropdown-toggle">                                    {{trans('home.specialities')}}
                                 </a>
                                 <ul class="sub-menu">
                                     @foreach(menuCategories() as $cat)
@@ -95,7 +95,7 @@
             </div>
             @if(Auth::check())
                 <div class="pt-2 {{ isMobile() ? 'w-100 d-flex justify-content-between' : ''}}">
-{{--                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>--}}
+                    <div class="d-inline-block desktop-account-info-padding align-self-center"><a href="{{LaravelLocalization::getLocalizedURL((config('app.locale') == 'en') ? 'ar':'en') }}" style="color: #326478;font-weight: bold;"><i class="fas fa-globe"></i> {{trans('website.other lang')}} </a></div>
 {{--                    <a href="/cart"><div class="head_cart d-inline-block align-self-center"><span class="floated_count">{{ count(getShoppingCart()) }}</span><a href="/cart" class="head_cart_icon"></a></div></a>--}}
                     <div class="d-inline-block desktop-account-info-padding">
                         <a class="nav-link dropdown-toggle" href="#" id="userMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -1,7 +1,7 @@
 @php
     use Illuminate\Support\Facades\Session as Session;
 
-        $VERSION_NUMBER = 15.1;
+        $VERSION_NUMBER = 15.2;
 @endphp
         <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}" dir="{{ getDir() }}">

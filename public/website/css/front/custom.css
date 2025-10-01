@@ -208,14 +208,15 @@ html{
  color: #fff;
 }
 .bread-crumb{
-    background: #326478;
     padding: 10px 0;
-    color: white;
+    color: #326478;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 
 }
 .bread-crumb a{
-  color: white;
-  font-weight: 700;
+    color: #326478;
+    font-weight: 700;
 }
 .bread-crumb a:hover{
   color: #2699ba
@@ -3856,7 +3857,9 @@ color:#FFF;
 
 
 /* START NEW FOOTER */
-.main-footer > footer{padding: 50px 0 0 0;background: #303030;}
+.main-footer > footer{
+    border-top: 1px solid #dee2e6;
+}
 .main-footer > footer img{
     /* width: 140px; */
 }

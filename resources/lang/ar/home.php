@@ -152,5 +152,12 @@
         'Specialized services'=>'الخدمات التخصصية',
         'Professional Certificates'=>'الشهادات الاحترافية',
         'No results found in the search'=>'لا توجد نتائج فى البحث',
+        'Subscribe now'=>'اشترك الان',
+        'Trial version'=>' نسخة تجريبية',
+        'Future of Health Tourism Training Platform'=>' منصة تدريب مستقبل السياحة الصحية',
+        'Content certified by the National Center for e-Learning and Future X'=>' المحتوى معتمد من المركز الوطني للتعليم الإلكتروني و FUTURE X',
+        'Copyright © 2025 Health Tourism Future.'=>'حقوق النشر © 2025 مستقبل السياحة الصحية.',
+        'Content Developer'=>' مطور محتوى',
+        'Powered by IGTS'=>'مدعوم من IGTS',
 
     ];

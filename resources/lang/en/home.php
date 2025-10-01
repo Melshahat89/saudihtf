@@ -152,4 +152,11 @@
         'Specialized services'=>'Specialized services',
         'Professional Certificates'=>'Professional Certificates',
         'No results found in the search'=>'No results found in the search',
-	];
+        'Subscribe now'=>'Subscribe now',
+        'Trial version'=>'Trial version',
+        'Future of Health Tourism Training Platform'=>'Future of Health Tourism Training Platform',
+        'Content certified by the National Center for e-Learning and Future X'=>'Content certified by the National Center for e-Learning and Future X',
+        'Copyright © 2025 Health Tourism Future.'=>'Copyright © 2025 Health Tourism Future.',
+        'Content Developer'=>'Content Developer',
+        'Powered by IGTS'=>'Powered by IGTS',
+    ];

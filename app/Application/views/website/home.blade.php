@@ -1,7 +1,7 @@
 @php
     use Illuminate\Support\Facades\Session as Session;
 
-    $VERSION_NUMBER = 15.7;
+    $VERSION_NUMBER = 15.8;
 @endphp
 <html lang="{{ config('app.locale') }}" dir="{{ getDir() }}" data-theme="light">
 
@@ -20,7 +20,7 @@
     <meta name="author" content="IGTS">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="facebook-domain-verification" content="z3li963csbvtfybzbb6kf3unwwj4v9" />
-    <title> منصة تدريب مستقبل السياحة الصحية</title>
+    <title> {{trans('home.Future of Health Tourism Training Platform')}}</title>
     @if (View::hasSection('canonical'))
         @yield('canonical')
     @else
@@ -129,7 +129,7 @@
             <li>
                 <details>
                     <summary class=" text-black transition ease-in-out hover:text-green">
-                        جميع التخصصات
+                       {{trans('home.specialities')}}
                     </summary>
                     <ul class="rounded-[10px] min-w-[300px] grid grid-cols-1">
                         @foreach (menuCategories() as $cat)
@@ -184,7 +184,7 @@
 
 
     <p class="flex-shrink-0 whitespace-nowrap px-3 py-2 justify-center text-center text-white rounded-full text-sm bg-green hover:bg-blue transition-all duration-200 leading-none">
-        نسخة تجريبية
+        {{trans('home.Trial version')}}
     </p>
 
 
@@ -389,7 +389,7 @@
                 <li>
                     <details class="main-menu-toggle">
                         <summary class="transition ease-in-out text-white font-light text-[25px]">
-                            تخصصات عامة
+                            {{trans('home.specialities')}}
                         </summary>
                         <ul class="transition ease-in-out rounded-[10px] w-[300px] grid grid-cols-1">
                             @foreach (menuCategories() as $cat)
@@ -590,10 +590,10 @@
                     @endif
 
 
-                    {{--                        <a class="font-bold hover:text-white items-baseline ltr:pt-[4px] rtl:pt-[7px] w-[45px] h-[45px] transition ease-in-out hover:bg-white flex justify-center border rounded-full border-white text-white"--}}
-                    {{--                            href="{{ LaravelLocalization::getLocalizedURL(config('app.locale') == 'en' ? 'ar' : 'en') }}">--}}
-                    {{--                            {{ trans('website.other lang') }}--}}
-                    {{--                        </a>--}}
+                                            <a class="font-bold hover:text-white items-baseline ltr:pt-[4px] rtl:pt-[7px] w-[45px] h-[45px] transition ease-in-out hover:bg-white flex justify-center border rounded-full border-white text-white"
+                                                href="{{ LaravelLocalization::getLocalizedURL(config('app.locale') == 'en' ? 'ar' : 'en') }}">
+                                                {{ trans('website.other lang') }}
+                                            </a>
 
 
                 </div>
@@ -619,7 +619,7 @@
                 <br> --}}
                 <a href="#our-plans-section"
                    class="font-bold text-white text-[24px] md:text-[24px] pb-[3px] mt-[17px] transition ease-in-out bg-green hover:bg-blue w-[265px] h-[55px] flex items-center justify-center rounded-full">
-                    اشترك الآن
+                    {{trans('home.Subscribe now')}}
                 </a>
         </div>
     </div>
@@ -1164,11 +1164,12 @@
             class="flex flex-col items-center md:pb-0 pb-[32px] justify-between border-t md:flex-row border-grey md:pt-0 pt-[32px]">
         <!-- Copyright Notice -->
         <p class="md:text-[20px] text-[12px] text-black">
-            حقوق الطبع والنشر © 2025 Health Tourism Future.
+           {{trans('home.Copyright © 2025 Health Tourism Future.')}}
             <br>
-            مطور محتوى
-            <img src="https://igtsservice.com/website/images/logonew.webp" alt="igts"
-                 class="w-6 h-6"  style="width: 50px; height: 30px; display: inline;" />
+
+           {{trans('home.Powered by IGTS')}}
+{{--            <img src="https://igtsservice.com/website/images/logonew.webp" alt="igts"--}}
+{{--                 class="w-6 h-6"  style="width: 50px; height: 30px; display: inline;" />--}}
 
 {{--            IGTS--}}
             </p>
@@ -1177,7 +1178,7 @@
             <div class="flex justify-center gap-4 md:py-0 py-[20px]" style="max-height: 100px;">
                                 <div class="md:text-[20px] w-[300px]">
                                     <p>
-                                        المحتوى معتمد من المركز الوطني للتعليم الإلكتروني و FUTURE X
+                                        {{trans('home.Content certified by the National Center for e-Learning and Future X')}}
                                     </p>
                                 </div>
             </div>
