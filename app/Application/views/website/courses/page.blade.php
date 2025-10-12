@@ -591,21 +591,22 @@
 
 
                                             @else
-                                                <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
+                                                @isset($course->instructor)
+                                                    <h3 class="text_primary mblg text_capitalize">{{trans('courses.about instructor')}}</h3>
+                                                    <figure class="mbsm">
+                                                        <a href="/instructors/view/{{$course->instructor->slug}}">
 
-                                                <figure class="mbsm">
-                                                    <a href="/instructors/view/{{$course->instructor->slug}}">
-
-                                                        @if($course->instructor->image)
-                                                            <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
-                                                        @endif
-                                                    </a>
-                                                </figure>
-                                                <div class="auther_name mbmd">
-                                                    <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
-                                                    <span class="auther_title">{{$course->instructor->title_lang}}</span>
-                                                </div>
-                                                <div>{!!$course->instructor->about_lang!!}</div>
+                                                            @if($course->instructor->image)
+                                                                <img src="{{large1($course->instructor->image)}}" style="width: 100px;">
+                                                            @endif
+                                                        </a>
+                                                    </figure>
+                                                    <div class="auther_name mbmd">
+                                                        <h5 class="mbxs"><a href="/instructors/view/{{$course->instructor->slug}}">{{$course->instructor->Fullname_lang}}</a></h5>
+                                                        <span class="auther_title">{{$course->instructor->title_lang}}</span>
+                                                    </div>
+                                                    <div>{!!$course->instructor->about_lang!!}</div>
+                                                @endisset
                                             @endif
 
                                         @endif
