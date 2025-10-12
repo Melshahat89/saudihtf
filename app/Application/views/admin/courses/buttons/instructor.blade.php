@@ -1,2 +1,2 @@
 @php $user = App\Application\Model\User::find($instructor_id);  @endphp
-{{ $user->fullname_lang }}
+{{ isset($user) ?  $user->fullname_lang : 'لا يوجد محاضر' }}
